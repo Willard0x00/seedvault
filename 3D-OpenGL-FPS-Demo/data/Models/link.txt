@@ -1,0 +1,4 @@
+# Model
+dir Data\Models\link\
+file link.obj
+program_id 4

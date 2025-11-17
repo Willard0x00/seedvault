@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="3D-OpenGL-FPS-Demo.vcxproj" Id="b25a9d9c-1ab4-4bc8-ae87-e07b329d78f4" />
+</Solution>

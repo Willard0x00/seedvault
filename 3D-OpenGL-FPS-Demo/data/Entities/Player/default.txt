@@ -1,0 +1,15 @@
+- Default
+
+# Player
+fire_rate 0.1
+
+# Entity
+model_id 0
+str_name Player
+
+# Weight
+weight 30000000
+
+# Combat
+health 100
+damage 25
