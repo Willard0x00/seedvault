@@ -1,0 +1,3 @@
+[submodule "3D-OpenGL-Project/external/glm"]
+	path = 3D-OpenGL-Project/external/glm
+	url = https://github.com/g-truc/glm
