@@ -1,0 +1,4 @@
+Player - Data/Textures/player.bmp
+Dummy - Data/Textures/player.bmp
+Link - Data/Textures/link.bmp
+Greg - Data/Textures/greg.bmp

@@ -1,0 +1,12 @@
+0 - player.txt
+1 - dummy.txt
+2 - link.txt
+3 - bushki.txt
+4 - bandit.txt
+5 - wizard.txt
+6 - bandit leader.txt
+7 - pot.txt
+8 - scrawler.txt
+9 - scrawler mother.txt
+10 - fire dude.txt
+11 - noname.txt

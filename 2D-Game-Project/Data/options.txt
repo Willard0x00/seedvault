@@ -1,0 +1,10 @@
+Cam Lock Enabled - 1
+Cam.x - 0
+Cam.y - 164
+Cam Speed - 10
+FPS Limit - 60
+Window Width - 1600
+Window Height - 900
+Window.x - 150
+Window.y - 100
+Language - 1

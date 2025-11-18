@@ -1,0 +1,11 @@
+Player - Data/Textures/player.bmp
+Greg - Data/Textures/player.bmp
+Old Man - Data/Textures/player.bmp
+Tim - Data/Textures/player.bmp
+Lucas - Data/Textures/player.bmp
+Lily - Data/Textures/player.bmp
+Jessica - Data/Textures/player.bmp
+Jimmy - Data/Textures/player.bmp
+Dave - Data/Textures/player.bmp
+Jim - Data/Textures/Npcs/jim.bmp
+Sao - Data/Textures/Npcs/jim.bmp

@@ -1,0 +1,3 @@
+Empty - Data/Textures/Debuffs/fireball debuff.bmp
+Fireball - Data/Textures/Debuffs/fireball debuff.bmp
+Water - Data/Textures/Debuffs/water debuff.bmp

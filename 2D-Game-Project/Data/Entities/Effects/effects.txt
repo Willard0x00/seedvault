@@ -1,0 +1,5 @@
+0 Fire - Data/Textures/Effects/fire.bmp
+1 Leaves - Data/Textures/Effects/leaves.bmp
+2 Ripple - Data/Textures/Effects/ripple.bmp
+3 Lava - Data/Textures/Effects/lava.bmp
+4 Lava2 - Data/Textures/Effects/lava2.bmp

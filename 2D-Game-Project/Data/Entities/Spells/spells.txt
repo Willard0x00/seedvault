@@ -1,0 +1,7 @@
+Fireball - Data/Textures/Spells/fireball.bmp
+Bushki Attack - Data/Textures/Spells/bushki attack.bmp
+Bandit Attack - Data/Textures/Spells/bandit attack.bmp
+Wizard Attack - Data/Textures/Spells/wizard attack.bmp
+Bandit Leader Attack - Data/Textures/Spells/bandit leader attack.bmp
+Water - Data/Textures/Spells/water.bmp
+Scrawler Attack - Data/Textures/Spells/scrawler attack.bmp

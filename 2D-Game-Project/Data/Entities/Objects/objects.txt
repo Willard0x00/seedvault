@@ -1,0 +1,13 @@
+0 House - Data/Textures/Objects/house.bmp
+1 Tree - Data/Textures/Objects/tree.bmp
+2 Tree2 - Data/Textures/Objects/tree.bmp
+3 Tree3 - Data/Textures/Objects/tree.bmp
+4 Tree4 - Data/Textures/Objects/tree2.bmp
+5 Tree5 - Data/Textures/Objects/tree2.bmp
+6 Tree6 - Data/Textures/Objects/tree2.bmp
+7 Bush - Data/Textures/Objects/bush.bmp
+8 Stump - Data/Textures/Objects/stump.bmp
+9 Logs - Data/Textures/Objects/logs.bmp
+10 Tent - Data/Textures/Objects/tent.bmp
+11 Small Potion Shop Sign - Data/Textures/Objects/small potion shop sign.bmp
+12 Armor Shop Sign - Data/Textures/Objects/armor shop sign.bmp

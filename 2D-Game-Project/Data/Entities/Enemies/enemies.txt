@@ -1,0 +1,12 @@
+0 Player - Data/Textures/player.bmp
+1 Dummy - Data/Textures/player.bmp
+2 Link - Data/Textures/Enemies/link.bmp
+3 Bushki - Data/Textures/Enemies/bushki.bmp
+4 Bandit - Data/Textures/Enemies/bandit.bmp
+5 Wizard - Data/Textures/Enemies/wizard.bmp
+6 Bandit Leader - Data/Textures/Enemies/bandit leader.bmp
+7 Pot - Data/Textures/Enemies/pot.bmp
+8 Scrawler - Data/Textures/Enemies/scrawler.bmp
+9 Scrawler Mother - Data/Textures/Enemies/scrawler mother.bmp
+10 Fire Dude - Data/Textures/Enemies/fire dude.bmp
+11 No Name - Data/Textures/Enemies/noname.bmp

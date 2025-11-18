@@ -1,0 +1,18 @@
+id - 0
+type - 0
+name - Dagger
+Damage - 3
+Defense - 0
+Health - 0
+Hps - 0
+Mana - 0
+Mps - 0
+Leech - 0
+Drain - 0
+Luck - 0
+Speed - 0
+Drop Chance - 35
+Price - 15
+Duration - 0
+maxHealth - 0
+maxMana - 0

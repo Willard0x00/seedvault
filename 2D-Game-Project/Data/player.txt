@@ -1,0 +1,40 @@
+Name - Will
+Position.x - 889
+Position.y - 856
+Quest Size - 0
+Quests - 
+Item Size - 0
+Items - 
+Level - 1
+Exp - 40
+Max Health - 100
+Health - 100
+Health Regen - 2
+Max Mana - 100
+Mana - 100
+Mana Regen - 2
+Damage - 2
+Defense - 1
+Leech - 0
+Drain - 0
+Luck - 1
+Speed - 3
+Shards - 0
+Equipped - -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+Map - 24
+Selected Spell - 0
+Selected Secondary - 0
+Spell 0- 0
+Spell 1- -1
+Spell 2- -1
+Spell 3- -1
+Spell 4- -1
+Spell 5- -1
+Spell 6- -1
+Spell 7- -1
+Spell 8- -1
+Spell 9- -1
+Spell 10- -1
+Spell 11- -1
+Buffs Size - 0
+Buffs - 

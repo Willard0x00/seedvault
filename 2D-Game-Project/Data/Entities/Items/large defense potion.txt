@@ -1,0 +1,18 @@
+id - 10
+type - 10
+name - Large Defense potion
+Damage - 0
+Defense - 15
+Health - 0
+Hps - 0
+Mana - 0
+Mps - 0
+Leech - 0
+Drain - 0
+Luck - 0
+Speed - 0
+Drop Chance - 0
+Price - 200
+Duration - 60
+maxHealth - 0
+maxMana - 0
