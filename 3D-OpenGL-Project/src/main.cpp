@@ -13,7 +13,7 @@ int main() {
 	printf("---------------------\n");
 
 	System system;
-	exitCode = system.Init(4, 4, GL_TRUE);
+	exitCode = system.Init(3, 3, GL_TRUE);
 	printf("System Exit Code - %d\n", exitCode);
 
 	ResourceHandler resources;

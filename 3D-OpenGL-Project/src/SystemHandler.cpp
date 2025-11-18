@@ -27,14 +27,14 @@ int System::Init(int glversion, int samples, bool isResizable) {
 	);
 
 	glfwMakeContextCurrent(_window);
-	glfwSetWindowPos(_window, WINDOW_X, WINDOW_Y);
+ 	glfwSetWindowPos(_window, WINDOW_X, WINDOW_Y);
 
 	_windowWidth = WINDOW_WIDTH;
 	_windowWidthHalf = int(_windowWidth / 2);
 	_windowHeight = WINDOW_HEIGHT;
 	_windowHeightHalf = int(_windowHeight / 2);
 
-	auto error = glfwInit();
+	auto error = gl3wInit();
 	if (error) {
 		printf("gl3w failed to initialize\n");
 		return error;

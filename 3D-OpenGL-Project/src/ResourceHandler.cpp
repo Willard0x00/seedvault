@@ -4,10 +4,13 @@ int ResourceHandler::Init() {
 	_camera.Init(45.0f, 1100.f, 800.0f, 1.0f, 1000.0f);
 	RenderObject o1;
 	RenderObject o2("Data/Objects/default.obj", "Data/Objects/Shaders/default.vs", "Data/Objects/Shaders/default.fs", "Data/Objects/Textures/obj2.bmp");
-	RenderObject o3("Data/Objects/level.obj", "Data/Objects/Shaders/level.vs", "Data/Objects/Shaders/level.fs");
+	RenderObject o3("Data/Objects/level.obj", "Data/Objects/Shaders/default.vs", "Data/Objects/Shaders/default.fs");
 	load_obj(o1);
 	load_obj(o2);
 	load_obj(o3);
+	_renderObjects.push_back(o1);
+	_renderObjects.push_back(o2);
+	_renderObjects.push_back(o3);
 	return 0;
 }
 
@@ -22,7 +25,6 @@ void ResourceHandler::load_obj(RenderObject &obj) {
 		loadTexture(obj._texturePath, obj._texture);
 	}
 	obj._isLoaded = true;
-	_renderObjects.push_back(obj);
 }
 
 bool ResourceHandler::load_objFile(RenderObject &obj) {
