@@ -1,0 +1,4 @@
+# Bushki Attack
+stexture Data/Textures/Spells/bushki_attack.png
+iwidth 13
+iheight 7

@@ -1,0 +1,19 @@
+# Green Pants
+
+itexture_id 8
+sentity_name Green Pants
+
+Position
+iwidth 32
+iheight 32
+
+Item
+iitem_slot 4
+sitem_name Green Pants
+iitem_mana 25
+iitem_armor 1
+item_color 40 175 35 255
+iitem_sell_value 25
+
+bitem_equipable 1
+bitem_useable 0

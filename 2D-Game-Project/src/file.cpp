@@ -33,37 +33,46 @@ void File::read(std::string path) {
 
 void File::uread() {
 	_udata.clear();
-	std::wifstream file(_filepath, std::ios::binary);
-	std::wstring wstr = L"";
-	size_t find = 0;
-	file.imbue(std::locale(file.getloc(), new std::codecvt_utf8<wchar_t, 0x10ffff, std::consume_header>));
+	std::ifstream file(_filepath, std::ios::binary);
+	std::string line;
 
-	while (std::getline(file, wstr)) {
-		find = wstr.find('-');
-		wstr.erase(0, find + 2);
-		u8string utext(wstr.begin(), wstr.end());
+	while (std::getline(file, line)) {
+		// find '-'
+		size_t pos = line.find('-');
+		if (pos == std::string::npos)
+			continue;
+
+		// skip "- "
+		std::string trimmed = line.substr(pos + 2);
+
+		// store as UTF-8 (string → u8string is safe)
+		u8string utext(reinterpret_cast<const char8_t*>(trimmed.data()),
+			reinterpret_cast<const char8_t*>(trimmed.data() + trimmed.size()));
+
 		_udata.push_back(utext);
 	}
-
-	file.close();
 }
 
 void File::uread(std::string path) {
 	_udata.clear();
-	_setPath(path);
-	std::wifstream file(path, std::ios::binary);
-	std::wstring wstr = L"";
-	size_t find = 0;
-	file.imbue(std::locale(file.getloc(), new std::codecvt_utf8<wchar_t, 0x10ffff, std::consume_header>));
+	std::ifstream file(_filepath, std::ios::binary);
+	std::string line;
 
-	while (std::getline(file, wstr)) {
-		find = wstr.find('-');
-		wstr.erase(0, find + 2);
-		u8string utext(wstr.begin(), wstr.end());
+	while (std::getline(file, line)) {
+		// find '-'
+		size_t pos = line.find('-');
+		if (pos == std::string::npos)
+			continue;
+
+		// skip "- "
+		std::string trimmed = line.substr(pos + 2);
+
+		// store as UTF-8 (string → u8string is safe)
+		u8string utext(reinterpret_cast<const char8_t*>(trimmed.data()),
+			reinterpret_cast<const char8_t*>(trimmed.data() + trimmed.size()));
+
 		_udata.push_back(utext);
 	}
-
-	file.close();
 }
 
 

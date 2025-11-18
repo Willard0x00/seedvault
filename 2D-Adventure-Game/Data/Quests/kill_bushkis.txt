@@ -1,0 +1,6 @@
+# Kill Bushkis
+
+Kill_Quest
+
+itarget_id 0
+itotal 10

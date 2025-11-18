@@ -1,0 +1,6 @@
+# Effect Icons
+0 Data/Textures/Effects/Icons/ripple.txt
+1 Data/Textures/Effects/Icons/pond_leaf.txt
+2 Data/Textures/Effects/Icons/fire.txt
+3 Data/Textures/Effects/Icons/flag.txt
+4 Data/Textures/Effects/Icons/snowfall.txt

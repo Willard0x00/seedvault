@@ -1,0 +1,4 @@
+# Shirt
+stexture Data/Textures/Items/shirt.png
+iwidth 15
+iheight 15

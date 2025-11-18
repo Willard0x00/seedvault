@@ -1,0 +1,2 @@
+# Player
+0 Data/Textures/Player/default.txt

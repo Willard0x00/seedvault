@@ -1,0 +1,4 @@
+# Bandit Attack
+stexture Data/Textures/Spells/bandit_attack.png
+iwidth 14
+iheight 14

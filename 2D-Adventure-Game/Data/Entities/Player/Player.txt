@@ -1,0 +1,2 @@
+# Player
+0 Data/Entities/Player/default.txt

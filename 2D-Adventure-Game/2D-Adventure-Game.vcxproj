@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Button.h" />
+    <ClInclude Include="src\Button_Pressable.h" />
+    <ClInclude Include="src\Camera.h" />
+    <ClInclude Include="src\Clock.h" />
+    <ClInclude Include="src\Collision.h" />
+    <ClInclude Include="src\CombatComponent.h" />
+    <ClInclude Include="src\Combat_Lua.h" />
+    <ClInclude Include="src\Commands_Lua.h" />
+    <ClInclude Include="src\Component.h" />
+    <ClInclude Include="src\ComponentLoader.h" />
+    <ClInclude Include="src\Editor.h" />
+    <ClInclude Include="src\EffectComponent.h" />
+    <ClInclude Include="src\Effect_Lua.h" />
+    <ClInclude Include="src\EnemyComponent.h" />
+    <ClInclude Include="src\Enemy_Lua.h" />
+    <ClInclude Include="src\Engine.h" />
+    <ClInclude Include="src\Entity.h" />
+    <ClInclude Include="src\EntityManager.h" />
+    <ClInclude Include="src\Entity_Lua.h" />
+    <ClInclude Include="src\Environment.h" />
+    <ClInclude Include="src\FileReader.h" />
+    <ClInclude Include="src\Globals.h" />
+    <ClInclude Include="src\Globals_Lua.h" />
+    <ClInclude Include="src\Grid.h" />
+    <ClInclude Include="src\InputHandler.h" />
+    <ClInclude Include="src\InputManager.h" />
+    <ClInclude Include="src\InteractComponent.h" />
+    <ClInclude Include="src\Interact_Lua.h" />
+    <ClInclude Include="src\Inventory.h" />
+    <ClInclude Include="src\ItemComponent.h" />
+    <ClInclude Include="src\Item_Lua.h" />
+    <ClInclude Include="src\Kill_Quest.h" />
+    <ClInclude Include="src\Log.h" />
+    <ClInclude Include="src\MagicComponent.h" />
+    <ClInclude Include="src\Magic_Lua.h" />
+    <ClInclude Include="src\Map.h" />
+    <ClInclude Include="src\NPCComponent.h" />
+    <ClInclude Include="src\NPC_Lua.h" />
+    <ClInclude Include="src\Path.h" />
+    <ClInclude Include="src\Player.h" />
+    <ClInclude Include="src\PlayerComponent.h" />
+    <ClInclude Include="src\PlayerLoader.h" />
+    <ClInclude Include="src\Player_Lua.h" />
+    <ClInclude Include="src\PositionComponent.h" />
+    <ClInclude Include="src\Position_Lua.h" />
+    <ClInclude Include="src\Quadtree.h" />
+    <ClInclude Include="src\Quest.h" />
+    <ClInclude Include="src\QuestLoader.h" />
+    <ClInclude Include="src\Renderer.h" />
+    <ClInclude Include="src\ResourceManager.h" />
+    <ClInclude Include="src\Shop.h" />
+    <ClInclude Include="src\SpellComponent.h" />
+    <ClInclude Include="src\Spell_Lua.h" />
+    <ClInclude Include="src\Sprite.h" />
+    <ClInclude Include="src\SpriteComponent.h" />
+    <ClInclude Include="src\Sprite_Lua.h" />
+    <ClInclude Include="src\Text.h" />
+    <ClInclude Include="src\Textbox.h" />
+    <ClInclude Include="src\TextManager.h" />
+    <ClInclude Include="src\Texture.h" />
+    <ClInclude Include="src\TextureManager.h" />
+    <ClInclude Include="src\Text_Timed.h" />
+    <ClInclude Include="src\Timer.h" />
+    <ClInclude Include="src\UIHandler.h" />
+    <ClInclude Include="src\UIHandler_Editor.h" />
+    <ClInclude Include="src\UIManager.h" />
+    <ClInclude Include="src\Window.h" />
+    <ClInclude Include="src\WindowLoader.h" />
+    <ClInclude Include="src\_Lua.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Camera.cpp" />
+    <ClCompile Include="src\Clock.cpp" />
+    <ClCompile Include="src\Collision.cpp" />
+    <ClCompile Include="src\CombatComponent.cpp" />
+    <ClCompile Include="src\Combat_Lua.cpp" />
+    <ClCompile Include="src\Commands_Lua.cpp" />
+    <ClCompile Include="src\ComponentLoader.cpp" />
+    <ClCompile Include="src\Editor.cpp" />
+    <ClCompile Include="src\EffectComponent.cpp" />
+    <ClCompile Include="src\Effect_Lua.cpp" />
+    <ClCompile Include="src\EnemyComponent.cpp" />
+    <ClCompile Include="src\Enemy_Lua.cpp" />
+    <ClCompile Include="src\Engine.cpp" />
+    <ClCompile Include="src\Entity.cpp" />
+    <ClCompile Include="src\EntityManager.cpp" />
+    <ClCompile Include="src\Entity_Lua.cpp" />
+    <ClCompile Include="src\Environment.cpp" />
+    <ClCompile Include="src\FileReader.cpp" />
+    <ClCompile Include="src\Globals_Lua.cpp" />
+    <ClCompile Include="src\InputHandler.cpp" />
+    <ClCompile Include="src\InputManager.cpp" />
+    <ClCompile Include="src\InteractComponent.cpp" />
+    <ClCompile Include="src\Interact_Lua.cpp" />
+    <ClCompile Include="src\Inventory.cpp" />
+    <ClCompile Include="src\ItemComponent.cpp" />
+    <ClCompile Include="src\Item_Lua.cpp" />
+    <ClCompile Include="src\Kill_Quest.cpp" />
+    <ClCompile Include="src\Log.cpp" />
+    <ClCompile Include="src\MagicComponent.cpp" />
+    <ClCompile Include="src\Magic_Lua.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Map.cpp" />
+    <ClCompile Include="src\NPCComponent.cpp" />
+    <ClCompile Include="src\NPC_Lua.cpp" />
+    <ClCompile Include="src\Player.cpp" />
+    <ClCompile Include="src\PlayerComponent.cpp" />
+    <ClCompile Include="src\PlayerLoader.cpp" />
+    <ClCompile Include="src\Player_Lua.cpp" />
+    <ClCompile Include="src\PositionComponent.cpp" />
+    <ClCompile Include="src\Position_Lua.cpp" />
+    <ClCompile Include="src\QuestLoader.cpp" />
+    <ClCompile Include="src\Renderer.cpp" />
+    <ClCompile Include="src\ResourceManager.cpp" />
+    <ClCompile Include="src\Shop.cpp" />
+    <ClCompile Include="src\SpellComponent.cpp" />
+    <ClCompile Include="src\Spell_Lua.cpp" />
+    <ClCompile Include="src\Sprite.cpp" />
+    <ClCompile Include="src\SpriteComponent.cpp" />
+    <ClCompile Include="src\Sprite_Lua.cpp" />
+    <ClCompile Include="src\Text.cpp" />
+    <ClCompile Include="src\TextBox.cpp" />
+    <ClCompile Include="src\TextManager.cpp" />
+    <ClCompile Include="src\TextureManager.cpp" />
+    <ClCompile Include="src\Text_Timed.cpp" />
+    <ClCompile Include="src\Timer.cpp" />
+    <ClCompile Include="src\UIHandler.cpp" />
+    <ClCompile Include="src\UIHandler_Editor.cpp" />
+    <ClCompile Include="src\UIManager.cpp" />
+    <ClCompile Include="src\Window.cpp" />
+    <ClCompile Include="src\WindowLoader.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{67370d9e-b2a7-491e-81e7-01e4ed2e37cc}</ProjectGuid>
+    <RootNamespace>My2DAdventureGame</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)external\luawrapper\include;$(SolutionDir)external\sdl_image\include;$(SolutionDir)external\sdl_ttf\include;$(SolutionDir)external\sdl\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)external\sdl_image\lib\release;$(SolutionDir)external\sdl_ttf\lib\release;$(SolutionDir)external\sdl\lib\release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)external\lua;$(SolutionDir)external\sdl_image\include;$(SolutionDir)external\sdl_ttf\include;$(SolutionDir)external\sdl\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)external\lua;$(SolutionDir)external\sdl_image\lib\debug;$(SolutionDir)external\sdl_ttf\lib\debug;$(SolutionDir)external\sdl\lib\debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL3_ttf.lib;SDL3_image.lib;SDL3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>lua51.lib;SDL3_ttf.lib;SDL3_image.lib;SDL3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

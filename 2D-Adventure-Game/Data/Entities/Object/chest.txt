@@ -1,0 +1,14 @@
+# Chest
+
+itexture_id 12
+sentity_name Chest
+
+Position
+iwidth 64
+iheight 32
+
+Interact
+sinteract_name Chest
+sinteract_script_name Chest
+sinteract_script Data/Lua/Objects/chest.lua
+sinteract_ui_info Open

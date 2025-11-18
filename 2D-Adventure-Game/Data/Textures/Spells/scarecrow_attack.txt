@@ -1,0 +1,4 @@
+# Scarecrow Attack
+stexture Data/Textures/Spells/scarecrow_attack.png
+iwidth 10
+iheight 10

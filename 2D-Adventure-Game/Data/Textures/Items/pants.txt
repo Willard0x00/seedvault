@@ -1,0 +1,4 @@
+# Pants
+stexture Data/Textures/Items/pants.png
+iwidth 15
+iheight 15

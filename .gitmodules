@@ -7,3 +7,6 @@
 [submodule "3D-OpenGL-Instance-Rendering/external/glm"]
 	path = 3D-OpenGL-Instance-Rendering/external/glm
 	url = https://github.com/g-truc/glm
+[submodule "2D-Adventure-Game/external/luawrapper"]
+	path = 2D-Adventure-Game/external/luawrapper
+	url = https://github.com/alexames/luawrapper

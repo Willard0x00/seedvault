@@ -1,0 +1,8 @@
+# Logs
+
+itexture_id 5
+sentity_name Logs
+
+Position
+iwidth 144
+iheight 85

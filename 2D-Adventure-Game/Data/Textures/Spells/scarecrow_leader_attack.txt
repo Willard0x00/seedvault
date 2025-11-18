@@ -1,0 +1,4 @@
+# Scarecrow Leader Attack
+stexture Data/Textures/Spells/scarecrow_leader_attack.png
+iwidth 10
+iheight 10

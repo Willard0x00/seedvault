@@ -1,0 +1,17 @@
+# Scarecrow Attack
+
+itexture_id 3
+sentity_name Scarecrow Attack
+
+Position
+iwidth 10
+iheight 10
+
+Spell
+fmax_dis 800
+fspell_speed 400
+ideath_time 0
+sspell_script_name Scarecrow_Attack
+sspell_script Data/Lua/Spells/Scarecrow_attack.lua
+ispell_damage 5
+spell_color 190 170 90 255

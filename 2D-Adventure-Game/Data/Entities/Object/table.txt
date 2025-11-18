@@ -1,0 +1,8 @@
+# Table
+
+itexture_id 10
+sentity_name Table
+
+Position
+iwidth 100
+iheight 40

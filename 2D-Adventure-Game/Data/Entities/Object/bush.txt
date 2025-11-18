@@ -1,0 +1,8 @@
+# Bush
+
+itexture_id 2
+sentity_name Bush
+
+Position
+iwidth 38
+iheight 34

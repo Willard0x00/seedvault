@@ -1,0 +1,8 @@
+# Post
+
+itexture_id 4
+sentity_name Post
+
+Position
+iwidth 48
+iheight 64

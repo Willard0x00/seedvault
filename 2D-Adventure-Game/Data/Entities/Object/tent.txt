@@ -1,0 +1,8 @@
+# Tent
+
+itexture_id 9
+sentity_name Tent
+
+Position
+iwidth 150
+iheight 200

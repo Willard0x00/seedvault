@@ -1,0 +1,8 @@
+# Well
+
+itexture_id 19
+sentity_name Well
+
+Position
+iwidth 92
+iheight 92
