@@ -1,0 +1,14 @@
+# Entity
+type Object
+id 1
+model_id 1
+name Clay Rock
+draw 1
+
+# Transform
+position 18 1 30
+scale 1 1 1
+rotation 0 0 0
+speed 0.01
+collidable 1
+

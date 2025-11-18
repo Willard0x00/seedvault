@@ -1,0 +1,10 @@
+- Tree
+
+# Entity
+type Object
+id 0
+model_id 0
+name Tree
+
+# Transform
+speed 1.0

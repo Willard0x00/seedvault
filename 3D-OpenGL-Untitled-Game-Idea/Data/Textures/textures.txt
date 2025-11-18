@@ -1,0 +1,10 @@
+# Textures
+
+# Icons
+0 Data\Textures\Icons\Editor\terrain_icon.txt
+1 Data\Textures\Icons\Editor\select_icon.txt
+2 Data\Textures\Icons\Editor\place_icon.txt
+
+100 Data\Textures\Icons\tree_icon.txt
+101 Data\Textures\Icons\clay rock.txt
+102 Data\Textures\Icons\box.txt
