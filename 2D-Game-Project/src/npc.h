@@ -12,7 +12,7 @@ public:
 
 	void NPCInit();
 	void speech(TextBox& t, std::string s);
-	void speech(TextBox& t, u16string s);
+	void speech(TextBox& t, u8string s);
 	//Returns true if complete
 	bool promptQuest(Quest& q, TextBox& t);
 	void promptDialoge(TextBox& t);

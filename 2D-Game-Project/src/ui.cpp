@@ -8,7 +8,7 @@ const SDL_Rect UI::SPELL_BOX = { 7, 825, 50, 50 };
 const SDL_Rect UI::SPELL_BOX_SPELL = { 32, 740, NULL, NULL };
 const SDL_Rect UI::SECONDARY_BOX = { 73, 825, 50, 50 };
 
-void UI::drawItemInfo(SDL_Rect& mouse, u16string name, int& drop, std::vector<Text>& texts, SDL_Renderer* renderer) {
+void UI::drawItemInfo(SDL_Rect& mouse, u8string name, int& drop, std::vector<Text>& texts, SDL_Renderer* renderer) {
 	Text::clear(texts);
 	SDL_Rect infoName = { mouse.x + 30, mouse.y - 40, NULL, 30};
 	Text textName = Text::printT(TEXT_DAMAGE, name, infoName, Item::getRarity(drop));
@@ -17,7 +17,7 @@ void UI::drawItemInfo(SDL_Rect& mouse, u16string name, int& drop, std::vector<Te
 	Texture::drawRectTrans(infoBox, ITEM_INFO_COLOR, renderer);
 }
 
-void UI::drawEnemyInfo(SDL_Rect& mouse, u16string name, int level, int health, int maxHealth, int mana, int maxMana, int damage, int defense, std::vector<Text>& texts, SDL_Renderer* renderer) {
+void UI::drawEnemyInfo(SDL_Rect& mouse, u8string name, int level, int health, int maxHealth, int mana, int maxMana, int damage, int defense, std::vector<Text>& texts, SDL_Renderer* renderer) {
 	Options& options = options.Instance();
 	File infoFile;
 	if (options.lang == ENGLISH) {
@@ -107,7 +107,7 @@ void UI::drawBarNoCam(const SDL_Rect& rect, int height, const int& maxL, const i
 	Texture::drawRectNoCam(newPos, front, renderer);;
 }
 
-void UI::setMap(u16string uname) {
+void UI::setMap(u8string uname) {
 	mapName = Text::printT(TEXT_BOX, uname, MAP_NAME, Text::WHITE);
 	bmapName = true;
 	mapNameTime.tock(0);

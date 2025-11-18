@@ -25,7 +25,7 @@ public:
 	};
 
 	std::string name;
-	u16string uname;
+	u8string uname;
 
 	bool isTileLoaded = false;
 

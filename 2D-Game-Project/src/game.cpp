@@ -812,8 +812,7 @@ void Game::save() {
 void Game::load() {
 	File file;
 	int mapID = 0;
-	//file.uread("Data/name.txt");
-	file.read("Data/name.txt");
+	file.uread("Data/name.txt");
 	player.uName = file.getU16(1);
 	file.read("Data/player.txt");
 	player.pos.x = file.getInt(2);

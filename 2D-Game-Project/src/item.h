@@ -28,7 +28,7 @@ public:
 	enum {RARE_GRAY = 50, RARE_GREEN = 35, RARE_BLUE = 20, RARE_PURPLE = 7, RARE_ORANGE = 1, RARE_SPECIAL = 100, RARE_SHARD = 101};
 	SDL_Rect pos;
 	std::string name;
-	u16string uName;
+	u8string uName;
 
 	int id;
 	int type;

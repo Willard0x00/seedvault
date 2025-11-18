@@ -258,8 +258,7 @@ void Bag::createTexts() {
 	Options& options = options.Instance();
 	File file;
 	if (options.lang == ENGLISH) {
-		//file.uread("Data/UI/Bag/en.txt");
-		file.read("Data/UI/Bag/en.txt");
+		file.uread("Data/UI/Bag/en.txt");
 	}
 	else if (options.lang == RUSSIAN) {
 		file.uread("Data/UI/Bag/ru.txt");
@@ -309,8 +308,7 @@ void Bag::createItemTexts(const int& index) {
 	std::string modifer = "+";
 	int height = 150;
 	if (options.lang == ENGLISH) {
-		//file.uread("Data/UI/Bag/en.txt");
-		file.read("Data/UI/Bag/en.txt");
+		file.uread("Data/UI/Bag/en.txt");
 	}
 	else if (options.lang == RUSSIAN) {
 		file.uread("Data/UI/Bag/ru.txt");
@@ -409,8 +407,7 @@ void Bag::createItemTextsEquip(const int& slot) {
 	std::string modifer = "+";
 	int height = 150;
 	if (options.lang == ENGLISH) {
-		//file.uread("Data/UI/Bag/en.txt");
-		file.read("Data/UI/Bag/en.txt");
+		file.uread("Data/UI/Bag/en.txt");
 	}
 	else if (options.lang == RUSSIAN) {
 		file.uread("Data/UI/Bag/ru.txt");

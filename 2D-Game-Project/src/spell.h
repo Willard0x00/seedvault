@@ -52,7 +52,7 @@ public:
 	bool hasDebuff;
 
 	std::string name;
-	u16string uname;
+	u8string uname;
 
 	int id;
 	int type;

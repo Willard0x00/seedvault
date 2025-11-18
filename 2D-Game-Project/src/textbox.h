@@ -32,12 +32,12 @@ public:
 	void update();
 	void print(std::string line);
 	void print(std::string line, SDL_Color color);
-	void print(u16string uline);
-	void print(u16string uline, SDL_Color color);
+	void print(u8string uline);
+	void print(u8string uline, SDL_Color color);
 	void setSpeaker(std::string speaker, SDL_Color color);
-	void setSpeaker(u16string speaker, SDL_Color color);
+	void setSpeaker(u8string speaker, SDL_Color color);
 	void removeSpeaker();
 
-	static u16string getSystemMessage(int lineNum);
+	static u8string getSystemMessage(int lineNum);
 };
 #endif

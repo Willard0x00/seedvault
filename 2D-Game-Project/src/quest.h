@@ -15,11 +15,11 @@ public:
 	std::string name;
 	std::string targetName;
 	std::string activeCount;
-	u16string npcName;
-	u16string question;
-	u16string active;
-	u16string complete;
-	std::vector<u16string> dialoge;
+	u8string npcName;
+	u8string question;
+	u8string active;
+	u8string complete;
+	std::vector<u8string> dialoge;
 
 	int id;
 	int type;

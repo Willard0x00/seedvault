@@ -89,7 +89,7 @@ public:
 	Time moveSpriteTimer;
 
 	std::string name;
-	u16string uName;
+	u8string uName;
 
 	bool isDead;
 	bool isCombat;

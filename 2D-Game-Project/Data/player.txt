@@ -1,6 +1,6 @@
 Name - Will
-Position.x - 889
-Position.y - 856
+Position.x - 1917
+Position.y - 1241
 Quest Size - 0
 Quests - 
 Item Size - 0
@@ -21,7 +21,7 @@ Luck - 1
 Speed - 3
 Shards - 0
 Equipped - -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
-Map - 24
+Map - 10
 Selected Spell - 0
 Selected Secondary - 0
 Spell 0- 0

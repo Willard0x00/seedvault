@@ -36,12 +36,12 @@ void File::uread() {
 	std::wifstream file(_filepath, std::ios::binary);
 	std::wstring wstr = L"";
 	size_t find = 0;
-	file.imbue(std::locale(file.getloc(), new std::codecvt_utf16<wchar_t, 0x10ffff, std::consume_header>));
+	file.imbue(std::locale(file.getloc(), new std::codecvt_utf8<wchar_t, 0x10ffff, std::consume_header>));
 
 	while (std::getline(file, wstr)) {
 		find = wstr.find('-');
 		wstr.erase(0, find + 2);
-		u16string utext(wstr.begin(), wstr.end());
+		u8string utext(wstr.begin(), wstr.end());
 		_udata.push_back(utext);
 	}
 
@@ -54,12 +54,12 @@ void File::uread(std::string path) {
 	std::wifstream file(path, std::ios::binary);
 	std::wstring wstr = L"";
 	size_t find = 0;
-	file.imbue(std::locale(file.getloc(), new std::codecvt_utf16<wchar_t, 0x10ffff, std::consume_header>));
+	file.imbue(std::locale(file.getloc(), new std::codecvt_utf8<wchar_t, 0x10ffff, std::consume_header>));
 
 	while (std::getline(file, wstr)) {
 		find = wstr.find('-');
 		wstr.erase(0, find + 2);
-		u16string utext(wstr.begin(), wstr.end());
+		u8string utext(wstr.begin(), wstr.end());
 		_udata.push_back(utext);
 	}
 
@@ -96,7 +96,7 @@ std::string File::getStr(int line) {
 	return "";
 }
 
-u16string File::getU16(int line) {
+u8string File::getU16(int line) {
 	line -= 1;
 	if (line < int(_udata.size()) && line >= 0) {
 		return _udata[line];

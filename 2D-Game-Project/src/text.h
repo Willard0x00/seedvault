@@ -19,7 +19,7 @@ private:
 	const static std::string FONT_PATH;
 
 	std::string _text;
-	u16string _utext;
+	u8string _utext;
 public:
 	enum { TEXT_SPACING_W = 20, DAMAGE_SIZE_Y = 30, NORMAL_SIZE_Y = 30};
 	enum { MAX_NORMAL_FRAME = 300, MAX_DAMAGE_FRAME = 50 };
@@ -70,7 +70,7 @@ public:
 	int frame;
 
 	bool load(std::string text, SDL_Renderer* renderer);
-	bool load(u16string utext, SDL_Renderer* renderer);
+	bool load(u8string utext, SDL_Renderer* renderer);
 	bool load(SDL_Renderer* renderer);
 	bool render(SDL_Rect& rect, SDL_Renderer* renderer);
 	bool render(SDL_Renderer* renderer);
@@ -81,21 +81,21 @@ public:
 	void update();
 
 	void setText(std::string text);
-	void setUText(u16string utext);
+	void setUText(u8string utext);
 	void setSpacing();
 	void destroy();
 	std::string getText();
-	u16string getUText();
+	u8string getUText();
 	TTF_Font* getFontType();
 
 	static void printT(const int& ntype, std::string text, SDL_Rect npos, std::vector<Text>& texts);
 	static void printT(const int& ntype, std::string text, SDL_Rect npos, std::vector<Text>& texts, SDL_Color ncolor = NORMAL_COLOR);
-	static void printT(const int& ntype, u16string utext, SDL_Rect npos, std::vector<Text>& texts);
-	static void printT(const int& ntype, u16string utext, SDL_Rect npos, std::vector<Text>& texts, bool spacing);
-	static void printT(const int& ntype, u16string utext, SDL_Rect npos, std::vector<Text>& texts, SDL_Color ncolor);
-	static void printT(const int& ntype, u16string utext, SDL_Rect npos, std::vector<Text>& texts, SDL_Color ncolor, bool spacing);
+	static void printT(const int& ntype, u8string utext, SDL_Rect npos, std::vector<Text>& texts);
+	static void printT(const int& ntype, u8string utext, SDL_Rect npos, std::vector<Text>& texts, bool spacing);
+	static void printT(const int& ntype, u8string utext, SDL_Rect npos, std::vector<Text>& texts, SDL_Color ncolor);
+	static void printT(const int& ntype, u8string utext, SDL_Rect npos, std::vector<Text>& texts, SDL_Color ncolor, bool spacing);
 	static Text printT(const int& ntype, std::string text, SDL_Rect npos, SDL_Color ncolor);
-	static Text printT(const int& ntype, u16string utext, SDL_Rect npos, SDL_Color ncolor);
+	static Text printT(const int& ntype, u8string utext, SDL_Rect npos, SDL_Color ncolor);
 	static void clear(std::vector<Text>& texts);
 };
 

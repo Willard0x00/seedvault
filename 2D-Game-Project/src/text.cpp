@@ -39,18 +39,11 @@ bool Text::load(std::string text, SDL_Renderer* renderer) {
 	}
 	_text = text;
 	
-	if (isUnicode == false) {
-		TTF_SetFontOutline(getFontType(), NULL);
-		surface = TTF_RenderText_Solid(getFontType(), _text.c_str(), _text.size(), color);
-		TTF_SetFontOutline(getFontType(), _OUTLINE);
-		oSurface = TTF_RenderText_Solid(getFontType(), _text.c_str(), _text.size(), Text::BLACK);
-	}
-	else {
-		//TTF_SetFontOutline(getFontType(), NULL);
-		//surface = TTF_RenderText_Solid(getFontType(), _utext.c_str(), color);
-		//TTF_SetFontOutline(getFontType(), _OUTLINE);
-		//oSurface = TTF_RenderText_Solid(getFontType(), _utext.c_str(), Text::BLACK);
-	}
+	TTF_SetFontOutline(getFontType(), NULL);
+	surface = TTF_RenderText_Solid(getFontType(), _text.c_str(), _text.size(), color);
+	TTF_SetFontOutline(getFontType(), _OUTLINE);
+	oSurface = TTF_RenderText_Solid(getFontType(), _text.c_str(), _text.size(), Text::BLACK);
+
 
 	if (surface != nullptr && oSurface != nullptr) {
 		pos.w = int(_text.length()) * TEXT_SPACING_W;
@@ -65,7 +58,7 @@ bool Text::load(std::string text, SDL_Renderer* renderer) {
 }
 
 // Creates a texture from a unicode string, called in .render()
-bool Text::load(u16string utext, SDL_Renderer* renderer) {
+bool Text::load(u8string utext, SDL_Renderer* renderer) {
 	SDL_Surface* surface = nullptr;
 	SDL_Surface* oSurface = nullptr;
 	isUnicode = true;
@@ -75,18 +68,12 @@ bool Text::load(u16string utext, SDL_Renderer* renderer) {
 	}
 	_utext = utext;
 
-	if (isUnicode == false) {
-		TTF_SetFontOutline(getFontType(), NULL);
-		surface = TTF_RenderText_Solid(getFontType(), _text.c_str(), _text.size(), color);
-		TTF_SetFontOutline(getFontType(), _OUTLINE);
-		oSurface = TTF_RenderText_Solid(getFontType(), _text.c_str(), _text.size(), Text::BLACK);
-	}
-	else {
-		//TTF_SetFontOutline(getFontType(), NULL);
-		//surface = TTF_RenderText_Solid(getFontType(), _utext.c_str(), utext.size(), color);
-		//TTF_SetFontOutline(getFontType(), _OUTLINE);
-		//oSurface = TTF_RenderGlyph_Solid(getFontType(), _utext.c_str(), Text::BLACK);
-	}
+	
+	TTF_SetFontOutline(getFontType(), NULL);
+	surface = TTF_RenderText_Solid(getFontType(), _text.c_str(), _text.size(), color);
+	TTF_SetFontOutline(getFontType(), _OUTLINE);
+	oSurface = TTF_RenderText_Solid(getFontType(), _text.c_str(), _text.size(), Text::BLACK);
+
 
 	if (surface != nullptr && oSurface != nullptr) {
 		texture = SDL_CreateTextureFromSurface(renderer, surface);
@@ -108,18 +95,10 @@ bool Text::load(SDL_Renderer* renderer) {
 		SDL_DestroyTexture(oTexture);
 	}
 
-	if (isUnicode == false) {
-		TTF_SetFontOutline(getFontType(), NULL);
-		surface = TTF_RenderText_Solid(getFontType(), _text.c_str(), _text.size(), color);
-		TTF_SetFontOutline(getFontType(), _OUTLINE);
-		oSurface = TTF_RenderText_Solid(getFontType(), _text.c_str(), _text.size(), Text::BLACK);
-	}
-	else {
-		//TTF_SetFontOutline(getFontType(), NULL);
-		//surface = TTF_RenderUNICODE_Solid(getFontType(), _utext.c_str(), color);
-		//TTF_SetFontOutline(getFontType(), _OUTLINE);
-		//oSurface = TTF_RenderUNICODE_Solid(getFontType(), _utext.c_str(), Text::BLACK);
-	}
+	TTF_SetFontOutline(getFontType(), NULL);
+	surface = TTF_RenderText_Solid(getFontType(), _text.c_str(), _text.size(), color);
+	TTF_SetFontOutline(getFontType(), _OUTLINE);
+	oSurface = TTF_RenderText_Solid(getFontType(), _text.c_str(), _text.size(), Text::BLACK);
 
 	if (surface != nullptr) {
 		texture = SDL_CreateTextureFromSurface(renderer, surface);
@@ -244,7 +223,7 @@ void Text::setText(std::string text) {
 }
 
 // Set unicode text
-void Text::setUText(u16string utext) {
+void Text::setUText(u8string utext) {
 	isUnicode = true;
 	_utext = utext;
 }
@@ -254,7 +233,7 @@ std::string Text::getText() {
 }
 
 // Get unicoide text
-u16string Text::getUText() {
+u8string Text::getUText() {
 	return _utext;
 }
 
@@ -334,7 +313,7 @@ void Text::printT(const int& ntype, std::string text, SDL_Rect npos, std::vector
 	texts.push_back(temp);
 }
 
-void Text::printT(const int& ntype, u16string utext, SDL_Rect npos, std::vector<Text>& texts) {
+void Text::printT(const int& ntype, u8string utext, SDL_Rect npos, std::vector<Text>& texts) {
 	Text temp;
 	temp.type = ntype;
 	temp.setUText(utext);
@@ -360,7 +339,7 @@ void Text::printT(const int& ntype, u16string utext, SDL_Rect npos, std::vector<
 	texts.push_back(temp);
 }
 
-void Text::printT(const int& ntype, u16string utext, SDL_Rect npos, std::vector<Text>& texts, bool spacing) {
+void Text::printT(const int& ntype, u8string utext, SDL_Rect npos, std::vector<Text>& texts, bool spacing) {
 	Text temp;
 	temp.type = ntype;
 	temp.setUText(utext);
@@ -388,7 +367,7 @@ void Text::printT(const int& ntype, u16string utext, SDL_Rect npos, std::vector<
 	texts.push_back(temp);
 }
 
-void Text::printT(const int& ntype, u16string utext, SDL_Rect npos, std::vector<Text>& texts, SDL_Color ncolor) {
+void Text::printT(const int& ntype, u8string utext, SDL_Rect npos, std::vector<Text>& texts, SDL_Color ncolor) {
 	Text temp;
 	temp.type = ntype;
 	temp.setUText(utext);
@@ -405,7 +384,7 @@ void Text::printT(const int& ntype, u16string utext, SDL_Rect npos, std::vector<
 	texts.push_back(temp);
 }
 
-void Text::printT(const int& ntype, u16string utext, SDL_Rect npos, std::vector<Text>& texts, SDL_Color ncolor, bool spacing) {
+void Text::printT(const int& ntype, u8string utext, SDL_Rect npos, std::vector<Text>& texts, SDL_Color ncolor, bool spacing) {
 	Text temp;
 	temp.type = ntype;
 	temp.setUText(utext);
@@ -442,7 +421,7 @@ Text Text::printT(const int& ntype, std::string text, SDL_Rect npos, SDL_Color n
 	return temp;
 }
 
-Text Text::printT(const int& ntype, u16string utext, SDL_Rect npos, SDL_Color ncolor) {
+Text Text::printT(const int& ntype, u8string utext, SDL_Rect npos, SDL_Color ncolor) {
 	Text temp;
 	temp.type = ntype;
 	temp.setUText(utext);

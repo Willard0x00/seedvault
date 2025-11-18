@@ -22,8 +22,7 @@ void Shop::shop(Window* window, Player* player, Npc* npc, std::vector<Texture>& 
 	fps.Init();
 	File file;
 	if (options.lang == ENGLISH) {
-		//file.uread("Data/UI/Shop/en.txt");
-		file.read("Data/UI/Shop/en.txt");
+		file.uread("Data/UI/Shop/en.txt");
 	}
 	else if (options.lang == RUSSIAN) {
 		file.uread("Data/UI/Shop/ru.txt");
@@ -178,7 +177,6 @@ void Shop::createItemTextPlayer() {
 	std::string modifer = "+";
 	int height = 75;
 	if (options.lang == ENGLISH) {
-		//file.uread("Data/UI/Bag/en.txt");
 		file.uread("Data/UI/Bag/en.txt");
 	}
 	else if (options.lang == RUSSIAN) {
@@ -275,8 +273,7 @@ void Shop::createItemTextNpc() {
 	std::string modifer = "+";
 	int height = 75;
 	if (options.lang == ENGLISH) {
-		//file.uread("Data/UI/Bag/en.txt");
-		file.read("Data/UI/Bag/en.txt");
+		file.uread("Data/UI/Bag/en.txt");
 	}
 	else if (options.lang == RUSSIAN) {
 		file.uread("Data/UI/Bag/ru.txt");

@@ -16,13 +16,13 @@
 #define OPTIONS_FILE 0
 #define PLAYER_FILE 1
 
-typedef std::basic_string<uint16_t, std::char_traits<uint16_t>, std::allocator<uint16_t> > u16string;
+typedef std::basic_string<uint8_t, std::char_traits<uint8_t>, std::allocator<uint8_t> > u8string;
 
 class File {
 private:
 	std::string _filepath;
 	std::vector<std::string> _data;
-	std::vector<u16string> _udata;
+	std::vector<u8string> _udata;
 
 	void _setPath(const int& filenum);
 	void _setPath(std::string filename);
@@ -42,7 +42,7 @@ public:
 	// *line - file line
 	std::string getStr(int line);
 	// *line - file line
-	u16string getU16(int line);
+	u8string getU16(int line);
 
 	int getSize();
 

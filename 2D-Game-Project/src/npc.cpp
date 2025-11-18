@@ -4,7 +4,7 @@ void Npc::speech(TextBox& t, std::string s) {
 	t.print(s);
 }
 
-void Npc::speech(TextBox& t, u16string s) {
+void Npc::speech(TextBox& t, u8string s) {
 	t.print(s);
 }
 

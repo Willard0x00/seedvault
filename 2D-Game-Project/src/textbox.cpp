@@ -127,12 +127,12 @@ void TextBox::print(std::string line, SDL_Color color) {
 	activeTime.tock(0);
 }
 
-// add a unicode line of type u16string
-void TextBox::print(u16string uline) {
-	std::vector<u16string> nlines;
+// add a unicode line of type std::u8string
+void TextBox::print(u8string uline) {
+	std::vector<u8string> nlines;
 	size_t lines = 1;
 	size_t find = 0;
-	u16string temp = { 0x00 };
+	u8string temp = { 0x00 };
 
 	if (uline.size() <= _MAX_LINE_LENGTH) {
 		nlines.push_back(uline);
@@ -178,11 +178,11 @@ void TextBox::print(u16string uline) {
 }
 
 // add a unicode line with a color
-void TextBox::print(u16string uline, SDL_Color color) {
-	std::vector<u16string> nlines;
+void TextBox::print(u8string uline, SDL_Color color) {
+	std::vector<u8string> nlines;
 	size_t lines = 1;
 	size_t find = 0;
-	u16string temp; // this may break dont know how to initilize this to NULL
+	u8string temp; // this may break dont know how to initilize this to NULL
 
 	if (uline.size() <= _MAX_LINE_LENGTH) {
 		nlines.push_back(uline);
@@ -235,8 +235,8 @@ void TextBox::setSpeaker(std::string speaker, SDL_Color color) {
 	_isSpeaker = true;
 }
 
-// set the speaker's anem to be displayed in unicode of type u16string
-void TextBox::setSpeaker(u16string speaker, SDL_Color color) {
+// set the speaker's anem to be displayed in unicode of type u8string
+void TextBox::setSpeaker(u8string speaker, SDL_Color color) {
 	SDL_DestroyTexture(_speaker.texture);
 	SDL_DestroyTexture(_speaker.oTexture);
 	_speaker = Text::printT(TEXT_BOX, speaker, { _NAME_X, _NAME_Y, NULL, _LINE_HEIGHT }, color);
@@ -248,12 +248,11 @@ void TextBox::removeSpeaker() {
 	_isSpeaker = false;
 }
 
-u16string TextBox::getSystemMessage(int lineNum) {
+u8string TextBox::getSystemMessage(int lineNum) {
 	Options& options = options.Instance();
 	File file;
 	if (options.lang == ENGLISH) {
-		//file.uread("Data/Messages/En/messages.txt");
-		file.read("Data/Messages/En/messages.txt");
+		file.uread("Data/Messages/En/messages.txt");
 	}
 	else if (options.lang == RUSSIAN) {
 		file.uread("Data/Messages/Ru/messages.txt");
