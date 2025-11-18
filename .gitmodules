@@ -10,3 +10,6 @@
 [submodule "2D-Adventure-Game/external/luawrapper"]
 	path = 2D-Adventure-Game/external/luawrapper
 	url = https://github.com/alexames/luawrapper
+[submodule "3D-OpenGL-Terrain/external/glm"]
+	path = 3D-OpenGL-Terrain/external/glm
+	url = https://github.com/g-truc/glm
