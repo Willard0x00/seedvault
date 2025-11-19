@@ -7,9 +7,9 @@ Including Lua scripting thanks to https://github.com/tomaka/luawrapper
 **Editor Demo** - https://www.youtube.com/watch?v=icD7bMi9fzw  
 
 **Screenshots**  
-![](https://github.com/willardt/2D-Adventure-Game/blob/master/Screenshots/ss1.png?raw=true "")  
-![](https://github.com/willardt/2D-Adventure-Game/blob/master/Screenshots/ss2.png?raw=true "")  
-![](https://github.com/willardt/2D-Adventure-Game/blob/master/Screenshots/ss3.png?raw=true "")  
+![](https://github.com/Willard000/seedvault/blob/master/2D-Adventure-Game/screenshots/ss1.png?raw=true "")  
+![](https://github.com/Willard000/seedvault/blob/master/2D-Adventure-Game/screenshots/ss2.png?raw=true "")  
+![](https://github.com/Willard000/seedvault/blob/master/2D-Adventure-Game/screenshots/ss3.png?raw=true "")  
 
 **Features**  
 4 different playable areas  
