@@ -1,13 +1,13 @@
 Game Demo - https://www.youtube.com/watch?v=4kv3hXBV6Yc  
 Editor Demo - https://www.youtube.com/watch?v=g__5xRvBKFk  
 
-![Level 1](https://github.com/willardt/A/blob/master/Screenshots/ss1.png?raw=true "Level 1")
+![Level 1](https://github.com/Willard000/seedvault/blob/master/2D-Game-Project/screenshots/ss1.png?raw=true "Level 1")
 
-![Level 2](https://github.com/willardt/A/blob/master/Screenshots/ss2.png?raw=true "Level 2")
+![Level 2](https://github.com/Willard000/seedvault/blob/master/2D-Game-Project/screenshots/ss2.png?raw=true "Level 2")
 
-![Level 15](https://github.com/willardt/A/blob/master/Screenshots/ss3.png?raw=true "Level 15")
+![Level 15](https://github.com/Willard000/seedvault/blob/master/2D-Game-Project/screenshots/ss3.png?raw=true "Level 15")
 
-![Level 33](https://github.com/willardt/A/blob/master/Screenshots/ss4.png?raw=true "Level 33")
+![Level 33](https://github.com/Willard000/seedvault/blob/master/2D-Game-Project/screenshots/ss4.png?raw=true "Level 33")
 
 Instructions:  
 Put Data folder inside Game folder and run FEB SDL.exe  
