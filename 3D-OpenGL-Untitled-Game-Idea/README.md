@@ -4,4 +4,4 @@
 **Editor Demo** - https://www.youtube.com/watch?v=ac__Jwu0YOE  
 
 **Screenshots**  
-![](https://github.com/willardt/8.21/blob/master/Screenshots/ss.png?raw=true "")  
+![](https://github.com/Willard000/seedvault/tree/master/3D-OpenGL-Untitled-Game-Idea/screenshots?raw=true "")  
