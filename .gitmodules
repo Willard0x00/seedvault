@@ -22,3 +22,6 @@
 [submodule "3D-OpenGL-Untitled-Game-Idea-2/external/glm"]
 	path = 3D-OpenGL-Untitled-Game-Idea-2/external/glm
 	url = https://github.com/g-truc/glm
+[submodule "puddle-v0.00001/external/glm"]
+	path = puddle-v0.00001/external/glm
+	url = https://github.com/g-truc/glm

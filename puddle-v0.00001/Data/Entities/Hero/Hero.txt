@@ -1,0 +1,13 @@
+# Entity
+name Hero
+
+# Transform
+speed.f 1.0
+scale.f 64.0
+
+# Sprite
+id.i 0
+shader.i 0
+image Data\Entities\Hero\hero.bmp
+idleBegin.i 0
+idleEnd.i 1
