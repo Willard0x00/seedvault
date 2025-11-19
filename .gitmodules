@@ -19,3 +19,6 @@
 [submodule "3D-OpenGL-Terrain-2/external/glm"]
 	path = 3D-OpenGL-Terrain-2/external/glm
 	url = https://github.com/g-truc/glm
+[submodule "3D-OpenGL-Untitled-Game-Idea-2/external/glm"]
+	path = 3D-OpenGL-Untitled-Game-Idea-2/external/glm
+	url = https://github.com/g-truc/glm

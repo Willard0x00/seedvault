@@ -1,0 +1,12 @@
+# Entity
+name.s Wall
+scene.i 1
+
+# Transform
+speed.f 0.0
+scale.f 1
+
+# Building
+
+# Scene
+id 1
