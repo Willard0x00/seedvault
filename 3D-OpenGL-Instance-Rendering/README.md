@@ -7,5 +7,5 @@ OpenGL Instance Rendering
 **Video #2** - https://www.youtube.com/watch?v=WDD7tOYwtJU  
 
 **Screenshots**  
-![](https://github.com/willardt/3D-OpenGL-Particles/blob/master/Screenshots/ss1.png?raw=true "")  
-![](https://github.com/willardt/3D-OpenGL-Particles/blob/master/Screenshots/ss2.png?raw=true "")  
+![](https://github.com/Willard000/seedvault/blob/master/3D-OpenGL-Instance-Rendering/screenshots/ss1.png?raw=true "")  
+![](https://github.com/Willard000/seedvault/blob/master/3D-OpenGL-Instance-Rendering/screenshots/ss2.png?raw=true "")  
