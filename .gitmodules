@@ -31,3 +31,6 @@
 [submodule "3D-OpenGL-Terrain-3/external/glm"]
 	path = 3D-OpenGL-Terrain-3/external/glm
 	url = https://github.com/g-truc/glm
+[submodule "3D-OpenGL-Instance-Rendering-2/external/glm"]
+	path = 3D-OpenGL-Instance-Rendering-2/external/glm
+	url = https://github.com/g-truc/glm

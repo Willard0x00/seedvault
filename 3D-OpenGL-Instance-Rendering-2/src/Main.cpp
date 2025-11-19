@@ -4,6 +4,8 @@
 #include <fstream>
 #include <iostream>
 #include <cstdlib>
+#include <stdlib.h> 
+#include <time.h>
 
 #include <GL/gl3w.h>
 #include <GLFW/glfw3.h>
@@ -16,18 +18,18 @@ const float CAMERA_WIDTH = 100.0f;
 const float CAMERA_HEIGHT = 100.0f;
 const float ZOOM_FACTOR = 25.0f;
 
-const float BOUNDARY_WIDTH = 1000000000.0f;
-const float BOUNDARY_HEIGHT = 1000000000.0f;
+const float BOUNDARY_WIDTH = 100.0f;
+const float BOUNDARY_HEIGHT = 100.0f;
 
 const int MAX_PARTICLES = 10000000;
 
-const float PARTICLE_SPEED = 50.0f;
+const float PARTICLE_SPEED = 10.0f;
 
-const double SPAWN_TIME = 0.0001;
+const double SPAWN_TIME = .001f;
 
 int num_particles = 0;
 
-static double g_time = 0.0;
+static double clock_time = 0.0;
 
 GLFWwindow *window = nullptr;
 GLuint program = 0;
@@ -109,6 +111,8 @@ struct Camera {
 	float width = CAMERA_WIDTH, height = CAMERA_HEIGHT;
 	float zoom = 0.0f;
 	float x = 0.0f, y = 0.0f;
+
+	/*
 	glm::mat4 projection = glm::ortho(
 		-(width / 2),
 		width / 2,
@@ -117,11 +121,21 @@ struct Camera {
 		0.0f,
 		1000.0f
 	);
+	*/
+
+	glm::mat4 projection = glm::perspective(90.0f, 1.0f, 0.1f, 100.0f);
 	glm::mat4 view = glm::lookAt(
 		glm::vec3(x, y, 1),
 		glm::vec3(x, y, 0),
 		glm::vec3(0, 1, 0)
 	);
+
+	float horizontal_angle = 3.14f;
+	float vertical_angle = 0.0f;
+	glm::vec3 position = glm::vec3(0.0f, 0.5f, 1.0f);
+	glm::vec3 direction;
+	glm::vec3 right;
+	glm::vec3 up;
 } camera;
 
 void update_view() {
@@ -131,6 +145,27 @@ void update_view() {
 		glm::vec3(0, 1, 0)
 	);
 
+	camera.direction = glm::vec3(
+		cos(camera.vertical_angle) * sin(camera.horizontal_angle),
+		sin(camera.vertical_angle),
+		cos(camera.vertical_angle) * cos(camera.horizontal_angle)
+	);
+	camera.right = glm::vec3(
+		sin(camera.horizontal_angle - 3.14f / 2.0f),
+		0,
+		cos(camera.horizontal_angle - 3.14f / 2.0f)
+	);
+	camera.up = glm::cross(camera.right, camera.direction);
+
+	camera.view = glm::lookAt(
+		camera.position,
+		camera.position + camera.direction,
+		camera.up
+	);
+
+	GLuint projection = glGetUniformLocation(program, "projection");
+	glUniformMatrix4fv(projection, 1, GL_FALSE, &camera.projection[0][0]);
+		
 	GLuint view = glGetUniformLocation(program, "view");
 	glUniformMatrix4fv(view, 1, GL_FALSE, &camera.view[0][0]);
 }
@@ -172,12 +207,12 @@ void scroll_callback(GLFWwindow *window, double xoffset, double yoffset) {
 	glUniformMatrix4fv(projection, 1, GL_FALSE, &camera.projection[0][0]);
 }
 
-bool s_clock() {
+bool my_clock() {
 	static double last_time_interval = glfwGetTime();
 	static double last_time = glfwGetTime();
 	static int frames = 0;
 
-	g_time = glfwGetTime() - last_time;
+	clock_time = glfwGetTime() - last_time;
 	last_time = glfwGetTime();
 
 	++frames;
@@ -200,7 +235,14 @@ int main() {
 
 	gl3wInit();
 
-	glfwSetScrollCallback(window, &scroll_callback);
+	srand(time(NULL));
+
+	glEnable(GL_CULL_FACE);
+	glDepthFunc(GL_LESS);
+
+	//glfwSetScrollCallback(window, &scroll_callback);
+
+	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
 
 	static double last_x, last_y, x_vel, y_vel;
 	glfwGetCursorPos(window, &last_x, &last_y);
@@ -212,19 +254,44 @@ int main() {
 	update_view();
 
 	static const GLfloat vertex_buffer_data[] = {
-		-0.1f, -0.1f,
-		0.1f, -0.1f,
-		-0.1f, 0.1f,
-		0.1f, 0.1f,
+		-0.1f, -0.1f, 0.0f,
+		0.1f, -0.1f, 0.0f,
+		-0.1f, 0.1f, 0.0f,
+		0.1f, 0.1f, 0.0f,
+
+		-0.1f, -0.1f, 0.1f,
+		0.1f, -0.1f, 0.1f,
+		-0.1f, 0.1f, 0.1f,
+		0.1f, 0.1f, 0.1f,
+
+		-0.1f, -0.1f, 0.1f,
+		-0.1f, -0.1f, 0.0f,
+		0.1f, -0.1f, 0.1f,
+		0.1f, -0.1f, 0.0f,
+
+		-0.1f, 0.1f, 0.1f,
+		-0.1f, 0.1f, 0.0f,
+		0.1f, 0.1f, 0.1f,
+		0.1f, 0.1f, 0.0f,
+
+		-0.1f, -0.1f, 0.0f,
+		-0.1f, -0.1f, 0.1f,
+		-0.1f, 0.1f, 0.0f,
+		-0.1f, 0.1f, 0.1f,
+
+		0.1f, -0.1f, 0.0f,
+		0.1f, -0.1f, 0.1f,
+		0.1f, 0.1f, 0.0f,
+		0.1f, 0.1f, 0.1f,
 	};
 
-	static GLfloat position_buffer_data[MAX_PARTICLES * 2];
+	static GLfloat position_buffer_data[MAX_PARTICLES * 3];
 	static int position_index = 0;
 
 	static GLfloat color_buffer_data[MAX_PARTICLES * 4];
 	static int color_index = 0;
 
-	static GLfloat vector_data[MAX_PARTICLES * 2];
+	static GLfloat vector_data[MAX_PARTICLES * 3];
 	static int vector_index = 0;
 
 	GLuint vertex;
@@ -239,7 +306,7 @@ int main() {
 	GLuint position_buffer;
 	glGenBuffers(1, &position_buffer);
 	glBindBuffer(GL_ARRAY_BUFFER, position_buffer);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * MAX_PARTICLES * 2, NULL, GL_STREAM_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * MAX_PARTICLES * 3, NULL, GL_STREAM_DRAW);
 
 	GLuint color_buffer;
 	glGenBuffers(1, &color_buffer);
@@ -248,11 +315,11 @@ int main() {
 
 	glEnableVertexAttribArray(0);
 	glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer);
-	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 0, (void*)0);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
 
 	glEnableVertexAttribArray(1);
 	glBindBuffer(GL_ARRAY_BUFFER, position_buffer);
-	glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 0, (void*)0);
+	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
 	glVertexAttribDivisor(1, 1);
 
 	glEnableVertexAttribArray(2);
@@ -269,8 +336,8 @@ int main() {
 
 		//glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 		glBindBuffer(GL_ARRAY_BUFFER, position_buffer);
-		glBufferData(GL_ARRAY_BUFFER, MAX_PARTICLES * 2 * sizeof(GLfloat), NULL, GL_STREAM_DRAW);
-		glBufferSubData(GL_ARRAY_BUFFER, 0, num_particles * sizeof(GLfloat) * 2, position_buffer_data);
+		glBufferData(GL_ARRAY_BUFFER, MAX_PARTICLES * 3 * sizeof(GLfloat), NULL, GL_STREAM_DRAW);
+		glBufferSubData(GL_ARRAY_BUFFER, 0, num_particles * sizeof(GLfloat) * 3, position_buffer_data);
 
 		glBindBuffer(GL_ARRAY_BUFFER, color_buffer);
 		glBufferData(GL_ARRAY_BUFFER, MAX_PARTICLES * 4 * sizeof(GLfloat), NULL, GL_STREAM_DRAW);
@@ -278,15 +345,15 @@ int main() {
 
 		glEnableVertexAttribArray(1);
 		glBindBuffer(GL_ARRAY_BUFFER, position_buffer);
-		glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 0, (void*)0);
-		glVertexAttribDivisor(1, 1);
+		glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
+		glVertexAttribDivisor(1, 2);
 
 		glEnableVertexAttribArray(2);
 		glBindBuffer(GL_ARRAY_BUFFER, color_buffer);
 		glVertexAttribPointer(2, 4, GL_FLOAT, GL_FALSE, 0, (void*)0);
 		glVertexAttribDivisor(2, 1);
 
-		glDrawArraysInstanced(GL_TRIANGLE_STRIP, 0, 4, num_particles);
+		glDrawArraysInstanced(GL_TRIANGLE_STRIP, 0, 4 * 6, num_particles);
 
 		glfwSwapBuffers(window);
 
@@ -332,7 +399,12 @@ int main() {
 		}
 		*/
 
-		static GLfloat vectors[16][2] = {
+		static float rand_1 = float(rand() % 100) / 100.0f;
+		static float rand_2 = float(rand() % 100) / 100.0f;
+		static float rand_3 = float(rand() % 100) / 100.0f;
+		static float rand_4 = float(rand() % 100) / 100.0f;
+
+		static GLfloat vectors[24][2] = {
 			{0.0f, 1.0f},
 			{0.0f, -1.0f},
 			{1.0f, 0.0f},
@@ -348,7 +420,16 @@ int main() {
 			{.25f, .75f},
 			{.75f, .25f},
 			{.75f, -.25f},
-			{.25f, -.75f}
+			{.25f, -.75f},
+			{rand_1, 100.0f - rand_1},
+			{-(100.0f - rand_1), -rand_1},
+			{rand_2, 100.0f - rand_2},
+			{-(100.0f - rand_2), -rand_2},
+			{rand_3, 100.0f - rand_3},
+			{-(100.0f - rand_3), -rand_3},
+			{rand_4, 100.0f - rand_4},
+			{-(100.0f - rand_4), -rand_4},
+
 		};
 
 		glfwGetCursorPos(window, &xpos, &ypos);
@@ -356,12 +437,12 @@ int main() {
 		xpos += camera.x;
 		ypos += camera.y;
 
-		static double update_time = g_time;
+		static double update_time = clock_time;
 		if ((glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS) &&
 			update_time > SPAWN_TIME &&
 			num_particles != MAX_PARTICLES &&
 			(xpos < BOUNDARY_WIDTH) && (xpos > -BOUNDARY_WIDTH) && (ypos < BOUNDARY_HEIGHT) && (ypos > -BOUNDARY_HEIGHT)) {
-			for (int i = 0; i < 4; ++i) {
+			for (int i = 0; i < 16; ++i) {
 				if (num_particles < MAX_PARTICLES) {
 					vector_data[vector_index++] = vectors[i][0];
 					vector_data[vector_index++] = vectors[i][1];
@@ -378,26 +459,77 @@ int main() {
 				}
 			}
 		}
-		update_time += g_time;
+		update_time += clock_time;
+
+
+		glfwGetCursorPos(window, &xpos, &ypos);
+
+		camera.horizontal_angle += clock_time * ((WINDOW_W / 2) - xpos);
+		camera.vertical_angle += clock_time * ((WINDOW_H / 2) - ypos);
+
+		glfwSetCursorPos(window, WINDOW_W / 2, WINDOW_H / 2);
+
+		if (glfwGetKey(window, GLFW_KEY_W)) {
+			camera.position += camera.direction * (float)clock_time;
+		}
+
+		if (glfwGetKey(window, GLFW_KEY_S)) {
+			camera.position -= camera.direction * (float)clock_time;
+		}
+
+		if (glfwGetKey(window, GLFW_KEY_A)) {
+			camera.position.x -= camera.right.x * clock_time;
+			camera.position.z -= camera.right.z * clock_time;
+		}
+
+		if (glfwGetKey(window, GLFW_KEY_D)) {
+			camera.position.x += camera.right.x * clock_time;
+			camera.position.z += camera.right.z * clock_time;
+		}
 
 		
+		/*
 		for (int i = 0; i < num_particles * 2; ++i) {
-			position_buffer_data[i] += vector_data[i] * PARTICLE_SPEED * g_time;
+			position_buffer_data[i] += vector_data[i] * PARTICLE_SPEED * time;
 
 			if (position_buffer_data[i] >= BOUNDARY_WIDTH || position_buffer_data[i] <= -BOUNDARY_WIDTH) {
 				vector_data[i] = -vector_data[i];
-				position_buffer_data[i] += vector_data[i] * PARTICLE_SPEED * g_time;
+				position_buffer_data[i] += vector_data[i] * PARTICLE_SPEED * time;
 			}
 
-			position_buffer_data[++i] += vector_data[i] * PARTICLE_SPEED * g_time;
+			position_buffer_data[++i] += vector_data[i] * PARTICLE_SPEED * time;
 			if (position_buffer_data[i] >= BOUNDARY_HEIGHT || position_buffer_data[i] <= -BOUNDARY_HEIGHT) {
 				vector_data[i] = -vector_data[i];
-				position_buffer_data[i] += vector_data[i] * PARTICLE_SPEED * g_time;
+				position_buffer_data[i] += vector_data[i] * PARTICLE_SPEED * time;
 			}
 		}
-	
+		*/
 
-		s_clock();
+		for (int i = 0; i < num_particles * 3; ++i) {
+			position_buffer_data[i] += vector_data[i] * PARTICLE_SPEED * clock_time;
+
+			if (position_buffer_data[i] >= BOUNDARY_WIDTH || position_buffer_data[i] <= -BOUNDARY_WIDTH) {
+				vector_data[i] = -vector_data[i];
+				position_buffer_data[i] += vector_data[i] * PARTICLE_SPEED * clock_time;
+			}
+
+			position_buffer_data[++i] += vector_data[i] * PARTICLE_SPEED * clock_time;
+			if (position_buffer_data[i] >= BOUNDARY_HEIGHT || position_buffer_data[i] <= -BOUNDARY_HEIGHT) {
+				vector_data[i] = -vector_data[i];
+				position_buffer_data[i] += vector_data[i] * PARTICLE_SPEED * clock_time;
+			}
+
+			position_buffer_data[++i] += vector_data[i] * PARTICLE_SPEED * clock_time;
+			if (position_buffer_data[i] >= BOUNDARY_HEIGHT || position_buffer_data[i] <= -BOUNDARY_HEIGHT) {
+				vector_data[i] = -vector_data[i];
+				position_buffer_data[i] += vector_data[i] * PARTICLE_SPEED * clock_time;
+			}
+			
+		}
+	
+		update_view();
+
+		my_clock();
 	}
 
 	return 0;

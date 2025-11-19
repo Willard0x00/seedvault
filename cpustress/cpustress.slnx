@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="3D-OpenGL-Instance-Rendering.vcxproj" Id="6e133e75-9895-477f-90f6-a7bbcd9b3f62" />
+  <Project Path="cpustress.vcxproj" />
 </Solution>
