@@ -48,7 +48,7 @@ glDrawArraysInstanced(GL_TRIANGLE_STRIP, 0, TILE_VERTICES_SIZE / 2, node->_root-
 ```
 Here is the result of a flat terrain with simple shading:
 
-![](https://github.com/willardt/3.31/blob/main/ss/terrain.png?raw=true "")  
+![](https://github.com/Willard000/seedvault/blob/master/3D-OpenGL-Terrain-3/screenshots/tile.png?raw=true "")  
 
 ### Height Map
 
@@ -56,7 +56,7 @@ The next step is to add height to the terrain mesh. This is done by creating an 
 We dont need 6 height values per tile, we only need 4 since 2 vertices overlap. The size of the height array is calculated by (width + 1) * (length + 1).
 The heights are maped per vertex row not per tile since there is overlap between vertices and tiles.
 
-![](https://github.com/willardt/3.31/blob/main/ss/heights.png?raw=true "")
+![](https://github.com/Willard000/seedvault/blob/master/3D-OpenGL-Terrain-3/screenshots/heights.png?raw=true "")
 
 ### Normal Map
 
@@ -81,7 +81,7 @@ vec3 get_normal(const int vertex) {
 
 Here is the result after adding a height map and normal map:
 
-![](https://github.com/willardt/3.31/blob/main/ss/terrain2.png?raw=true "")
+![](https://github.com/Willard000/seedvault/blob/master/3D-OpenGL-Terrain-3/screenshots/terrain2.png?raw=true "")
 
 ### Blend Map
 
@@ -108,19 +108,19 @@ We can increase the level of detail of our vertices by adding more. To do this I
 [Quadtree wiki](https://en.wikipedia.org/wiki/Quadtree)
 
 Level 0 detail
-![](https://github.com/willardt/3.31/blob/main/ss/terrain5.png?raw=true "")
+![](https://github.com/Willard000/seedvault/blob/master/3D-OpenGL-Terrain-3/screenshots/terrain3.png?raw=true "")
 Level 3 detail (third node in quadtree)
-![](https://github.com/willardt/3.31/blob/main/ss/terrain4.png?raw=true "")
+![](https://github.com/Willard000/seedvault/blob/master/3D-OpenGL-Terrain-3/screenshots/terrain4.png?raw=true "")
 Level 0 detail wireframe
-![](https://github.com/willardt/3.31/blob/main/ss/terrain6.png?raw=true "")
+![](https://github.com/Willard000/seedvault/blob/master/3D-OpenGL-Terrain-3/screenshots/terrain6.png?raw=true "")
 Level 3 detail wireframe
-![](https://github.com/willardt/3.31/blob/main/ss/terrain7.png?raw=true "")
+![](https://github.com/Willard000/seedvault/blob/master/3D-OpenGL-Terrain-3/screenshots/terrain7.png?raw=true "")
 
 Note that when we increase the level of detail we have no data for the height values between vertices. To find this data I approximate the height by averaging the heights of the old vertices. 
 
 Here is how a tile is divided into 4:
 
-![](https://github.com/willardt/3.31/blob/main/ss/average.png?raw=true "")
+![](https://github.com/Willard000/seedvault/blob/master/3D-OpenGL-Terrain-3/screenshots/average.png?raw=true "")
 
 The corner vertices retain the same value of the original tile, while the new vertices are an average of their adjacent vertices.
 ```C++
@@ -214,7 +214,7 @@ void TerrainNode::generate_heights(int index) {
 
 And the result with textures:
 
-![](https://github.com/willardt/3.31/blob/main/ss/terrain8.png?raw=true "")
+![](https://github.com/Willard000/seedvault/blob/master/3D-OpenGL-Terrain-3/screenshots/terrain8.png?raw=true "")
 
 ### Editing Terrain
 
