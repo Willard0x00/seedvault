@@ -1,0 +1,19 @@
+{"Entity": {
+    "name": "FireballAbility",
+    "type": "ability",
+    "id": 2,
+    
+    "Transform": {
+        "speed": 5000.0,
+        "scale": [1, 1],
+        "rotation": 0.0
+    },
+
+    "Sprite": {
+        "id": 2
+    },
+
+    "Ability": {
+        "onInit": "StandardSpellInit"
+    }
+}}

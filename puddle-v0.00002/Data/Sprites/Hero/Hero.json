@@ -1,0 +1,38 @@
+{
+    "Sprite": {
+        "name": "Hero",
+        "id": 0,
+        "image": "Data/Sprites/Hero/Hero.png",
+        "spriteWidth": 32,
+        "spriteHeight": 32,
+        "frames": 2,
+
+        "Animation": {
+            "name": "idle",
+
+            "0": {
+                "frame": 0,
+                "position": [0, 0, 0],
+                "scale": [1, 1],
+                "rotation": 0.0
+            },
+    
+            "1": {
+                "frame": 1,
+                "position": [0, 0, 0],
+                "scale": [1, 1],
+                "rotation": 0.0,
+                "duration": 400
+             },
+
+             "2": {
+                "frame": 0,
+                "position": [0, 0, 0],
+                "scale": [1, 1],
+                "rotation": 0.0,
+                "duration": 400
+             }
+ 
+       } 
+    }
+}

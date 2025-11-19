@@ -1,0 +1,22 @@
+{"Entity": {
+    "name": "Bow",
+    "type": "item",
+    "id": 6,
+    
+    "Transform": {
+        "speed": 100.0,
+        "scale": [1, 1],
+        "rotation": 0.0,
+        "width": 26,
+        "height": 26
+    },
+
+    "Sprite": {
+        "id": 6
+    },
+
+    "Item": {
+        "slot": 0,
+        "equipped rotation": -44.0
+    }
+}}

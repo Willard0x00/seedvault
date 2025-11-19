@@ -1,0 +1,113 @@
+[000:00:00:00:000:332] [SYSTEM] -> D:\code\seedvault\puddle-v0.00002\x64\Debug\puddle-v0.00002.exe 
+[000:00:00:00:001:430] [ERROR] -> Unknown exception Must provide a launch option '-l game' or '-l editor'
+[000:00:00:00:001:940] [ERROR] -> Unknown exception Must provide a map option '-m <filename>'
+[000:00:00:00:002:233] [SYSTEM] -> Startup
+[000:00:00:00:200:176] [SYSTEM] -> Engine Starting
+[000:00:00:00:200:525] [SYSTEM] -> Game Starting
+[000:00:00:00:200:899] [SYSTEM] -> Loading shaders
+[000:00:00:00:264:055] [INFO] -> Vertex Shader [Data/Shaders/basic shader.glsl] -> Compiled
+[000:00:00:00:265:769] [INFO] -> Fragment Shader [Data/Shaders/basic shader.glsl] -> Compiled
+[000:00:00:00:268:078] [INFO] -> Vertex Shader [Data/Shaders/batch shader.glsl] -> Compiled
+[000:00:00:00:269:640] [INFO] -> Fragment Shader [Data/Shaders/batch shader.glsl] -> Compiled
+[000:00:00:00:271:846] [INFO] -> Vertex Shader [Data/Shaders/map shader.glsl] -> Compiled
+[000:00:00:00:273:650] [INFO] -> Fragment Shader [Data/Shaders/map shader.glsl] -> Compiled
+[000:00:00:00:276:319] [INFO] -> Vertex Shader [Data/Shaders/rect shader.glsl] -> Compiled
+[000:00:00:00:277:871] [INFO] -> Fragment Shader [Data/Shaders/rect shader.glsl] -> Compiled
+[000:00:00:00:279:757] [INFO] -> Vertex Shader [Data/Shaders/sprite batch shader.glsl] -> Compiled
+[000:00:00:00:281:405] [INFO] -> Fragment Shader [Data/Shaders/sprite batch shader.glsl] -> Compiled
+[000:00:00:00:282:955] [INFO] -> Vertex Shader [Data/Shaders/sprite shader.glsl] -> Compiled
+[000:00:00:00:284:271] [INFO] -> Fragment Shader [Data/Shaders/sprite shader.glsl] -> Compiled
+[000:00:00:00:286:337] [INFO] -> Vertex Shader [Data/Shaders/text shader.glsl] -> Compiled
+[000:00:00:00:287:970] [INFO] -> Fragment Shader [Data/Shaders/text shader.glsl] -> Compiled
+[000:00:00:00:288:559] [SYSTEM] -> Finished loading shaders
+[000:00:00:00:322:410] [INFO] -> 0.00763359 0.00763359
+[000:00:00:00:323:145] [SYSTEM] -> Loading sprites
+[000:00:00:00:323:944] [INFO] -> Loading sprite file -> Data\Sprites\Arrow\arrow.json
+[000:00:00:00:341:361] [INFO] -> Loading sprite file -> Data\Sprites\Bow\bow.json
+[000:00:00:00:348:196] [INFO] -> Loading sprite file -> Data\Sprites\Eye\eye.json
+[000:00:00:00:355:583] [INFO] -> Loading sprite file -> Data\Sprites\Fireball\Fireball.json
+[000:00:00:00:362:271] [INFO] -> Loading sprite file -> Data\Sprites\Firewood\firewood.json
+[000:00:00:00:368:986] [INFO] -> Loading sprite file -> Data\Sprites\Hero\Hero.json
+[000:00:00:00:375:539] [INFO] -> Loading sprite file -> Data\Sprites\TestObject\testobject.json
+[000:00:00:00:382:470] [INFO] -> Loading sprite file -> Data\Sprites\Tree\tree.json
+[000:00:00:00:388:470] [SYSTEM] -> Finished loading sprites
+[000:00:00:00:393:477] [SYSTEM] -> Loading entities
+[000:00:00:00:393:820] [INFO] -> Loading entity file -> Data\Entities\Abilities\arrow.json
+[000:00:00:00:394:292] [INFO] -> Loading entity file -> Data\Entities\Abilities\fireball.json
+[000:00:00:00:394:729] [INFO] -> Loading entity file -> Data\Entities\Enemies\eye.json
+[000:00:00:00:395:137] [INFO] -> Loading entity file -> Data\Entities\Items\bow.json
+[000:00:00:00:395:541] [INFO] -> Loading entity file -> Data\Entities\Objects\firewood.json
+[000:00:00:00:396:126] [INFO] -> Loading entity file -> Data\Entities\Objects\testobject.json
+[000:00:00:00:396:803] [INFO] -> Loading entity file -> Data\Entities\Objects\tree.json
+[000:00:00:00:397:384] [INFO] -> Loading entity file -> Data\Entities\Player\player.json
+[000:00:00:00:397:743] [SYSTEM] -> Finished loading entities
+[000:00:00:00:397:974] [INFO] -> Loading map from: 1.kart
+[000:00:00:00:398:274] [ERROR] -> I/O error loading map.
+No such file or directory
+[000:00:00:00:398:487] [INFO] -> Loading entities from: 1.json
+[000:00:00:00:398:749] [ERROR] -> Couldn't find json file: 1.json
+[000:00:00:00:398:959] [DEBUG] -> -----Equipped Items-----
+[000:00:00:00:399:246] [DEBUG] -> 0: Bow 6
+[000:00:00:00:399:437] [DEBUG] -> -----Inventory-----
+[000:00:00:01:203:023] [INFO] -> fps: 73
+[000:00:00:02:209:226] [INFO] -> fps: 168
+[000:00:00:03:215:657] [IN[000:00:00:00:000:462] [SYSTEM] -> D:\code\seedvault\puddle-v0.00002\x64\Release\puddle-v0.00002.exe 
+[000:00:00:00:001:572] [ERROR] -> Unknown exception Must provide a launch option '-l game' or '-l editor'
+[000:00:00:00:002:057] [ERROR] -> Unknown exception Must provide a map option '-m <filename>'
+[000:00:00:00:002:442] [SYSTEM] -> Startup
+[000:00:00:00:208:458] [SYSTEM] -> Engine Starting
+[000:00:00:00:208:741] [SYSTEM] -> Game Starting
+[000:00:00:00:209:051] [SYSTEM] -> Loading shaders
+[000:00:00:00:271:604] [INFO] -> Vertex Shader [Data/Shaders/basic shader.glsl] -> Compiled
+[000:00:00:00:273:432] [INFO] -> Fragment Shader [Data/Shaders/basic shader.glsl] -> Compiled
+[000:00:00:00:275:802] [INFO] -> Vertex Shader [Data/Shaders/batch shader.glsl] -> Compiled
+[000:00:00:00:277:420] [INFO] -> Fragment Shader [Data/Shaders/batch shader.glsl] -> Compiled
+[000:00:00:00:279:704] [INFO] -> Vertex Shader [Data/Shaders/map shader.glsl] -> Compiled
+[000:00:00:00:281:467] [INFO] -> Fragment Shader [Data/Shaders/map shader.glsl] -> Compiled
+[000:00:00:00:283:559] [INFO] -> Vertex Shader [Data/Shaders/rect shader.glsl] -> Compiled
+[000:00:00:00:285:308] [INFO] -> Fragment Shader [Data/Shaders/rect shader.glsl] -> Compiled
+[000:00:00:00:287:671] [INFO] -> Vertex Shader [Data/Shaders/sprite batch shader.glsl] -> Compiled
+[000:00:00:00:288:731] [INFO] -> Fragment Shader [Data/Shaders/sprite batch shader.glsl] -> Compiled
+[000:00:00:00:289:764] [INFO] -> Vertex Shader [Data/Shaders/sprite shader.glsl] -> Compiled
+[000:00:00:00:290:446] [INFO] -> Fragment Shader [Data/Shaders/sprite shader.glsl] -> Compiled
+[000:00:00:00:291:930] [INFO] -> Vertex Shader [Data/Shaders/text shader.glsl] -> Compiled
+[000:00:00:00:293:234] [INFO] -> Fragment Shader [Data/Shaders/text shader.glsl] -> Compiled
+[000:00:00:00:293:623] [SYSTEM] -> Finished loading shaders
+[000:00:00:00:325:205] [INFO] -> 0.00763359 0.00763359
+[000:00:00:00:325:411] [SYSTEM] -> Loading sprites
+[000:00:00:00:325:760] [INFO] -> Loading sprite file -> Data\Sprites\Arrow\arrow.json
+[000:00:00:00:335:846] [INFO] -> Loading sprite file -> Data\Sprites\Bow\bow.json
+[000:00:00:00:336:821] [INFO] -> Loading sprite file -> Data\Sprites\Eye\eye.json
+[000:00:00:00:337:676] [INFO] -> Loading sprite file -> Data\Sprites\Fireball\Fireball.json
+[000:00:00:00:338:425] [INFO] -> Loading sprite file -> Data\Sprites\Firewood\firewood.json
+[000:00:00:00:339:193] [INFO] -> Loading sprite file -> Data\Sprites\Hero\Hero.json
+[000:00:00:00:339:945] [INFO] -> Loading sprite file -> Data\Sprites\TestObject\testobject.json
+[000:00:00:00:340:917] [INFO] -> Loading sprite file -> Data\Sprites\Tree\tree.json
+[000:00:00:00:341:602] [SYSTEM] -> Finished loading sprites
+[000:00:00:00:342:389] [SYSTEM] -> Loading entities
+[000:00:00:00:342:781] [INFO] -> Loading entity file -> Data\Entities\Abilities\arrow.json
+[000:00:00:00:343:197] [INFO] -> Loading entity file -> Data\Entities\Abilities\fireball.json
+[000:00:00:00:343:632] [INFO] -> Loading entity file -> Data\Entities\Enemies\eye.json
+[000:00:00:00:344:041] [INFO] -> Loading entity file -> Data\Entities\Items\bow.json
+[000:00:00:00:344:434] [INFO] -> Loading entity file -> Data\Entities\Objects\firewood.json
+[000:00:00:00:344:839] [INFO] -> Loading entity file -> Data\Entities\Objects\testobject.json
+[000:00:00:00:345:249] [INFO] -> Loading entity file -> Data\Entities\Objects\tree.json
+[000:00:00:00:345:731] [INFO] -> Loading entity file -> Data\Entities\Player\player.json
+[000:00:00:00:346:092] [SYSTEM] -> Finished loading entities
+[000:00:00:00:346:375] [INFO] -> Loading map from: 1.kart
+[000:00:00:00:346:764] [ERROR] -> I/O error loading map.
+No such file or directory
+[000:00:00:00:347:064] [INFO] -> Loading entities from: 1.json
+[000:00:00:00:347:396] [ERROR] -> Couldn't find json file: 1.json
+[000:00:00:00:347:717] [DEBUG] -> -----Equipped Items-----
+[000:00:00:00:348:139] [DEBUG] -> 0: Bow 6
+[000:00:00:00:348:441] [DEBUG] -> -----Inventory-----
+[000:00:00:01:213:315] [INFO] -> fps: 78
+[000:00:00:02:213:497] [INFO] -> fps: 168
+[000:00:00:03:218:133] [INFO] -> fps: 168
+[000:00:00:04:218:648] [INFO] -> fps: 168
+[000:00:00:05:166:428] [SYSTEM] -> Exiting cleanly
+[000:00:00:05:166:696] [SYSTEM] -> Game Shuting Down
+[000:00:00:05:167:180] [SYSTEM] -> Cleaning up shaders
+[000:00:00:05:167:684] [SYSTEM] -> Engine Shuting Down
+[000:00:00:05:204:650] [SYSTEM] -> Shutdown

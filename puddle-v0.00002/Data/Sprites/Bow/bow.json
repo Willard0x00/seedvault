@@ -1,0 +1,44 @@
+{"Sprite": {
+    "name": "Bow",
+    "id": 6,
+    "image": "Data/Sprites/Bow/bow.png",
+    "spriteWidth": 26,
+    "spriteHeight": 26,
+    "frames": 3,
+
+    "Animation": {
+        "name": "Attack",
+        "stop": true,
+
+        "0": {
+            "frame": 0,
+            "position": [0, 0, 0],
+            "scale": [1, 1],
+            "rotation": 0.0
+        },
+
+        "1": {
+            "frame": 1,
+            "position": [-1, 0, 0],
+            "scale": [1, 1],
+            "rotation": 0.0,
+            "duration": 50
+        },
+
+        "2": {
+            "frame": 2,
+            "position": [-2, 0, 0],
+            "scale": [1, 1],
+            "rotation": 0.0,
+            "duration": 50
+        },
+
+        "3": {
+            "frame": 2,
+            "position": [-3, 0, 0],
+            "scale": [1, 1],
+            "rotation": 0.0,
+            "duration": 50
+        }
+    }
+}}

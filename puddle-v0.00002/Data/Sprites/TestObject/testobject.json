@@ -1,0 +1,9 @@
+{"Sprite": {
+    "name": "TestObject",
+    "id": 4,
+    "image": "Data/Sprites/TestObject/testobject.png",
+    "spriteWidth": 32,
+    "spriteHeight": 32,
+    "frames": 1
+    }
+}

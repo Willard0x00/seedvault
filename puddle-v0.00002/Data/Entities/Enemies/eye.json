@@ -1,0 +1,21 @@
+{"Entity": {
+    "name": "Matthew",
+    "type": "enemy",
+    "id": 3,
+    
+    "Transform": {
+        "speed": 500.0,
+        "scale": [1, 1],
+        "rotation": 0.0,
+        "width": 30,
+        "height": 30 
+    },
+
+    "Sprite": {
+        "id": 3
+    },
+
+    "Enemy": {
+
+    }
+}}

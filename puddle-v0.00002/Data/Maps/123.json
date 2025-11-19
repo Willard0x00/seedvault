@@ -1,0 +1,392 @@
+{
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 0,
+        "Transform": {
+            "speed": 500.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [0.0, 0.0, 0.0],
+            "width": 28,
+            "height": 32
+        },
+        "Sprite": {
+            "id": 0
+        }
+    },
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 1,
+        "Transform": {
+            "speed": 100.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [0.0, 0.0, 0.0],
+            "width": 15,
+            "height": 15
+        },
+        "Sprite": {
+            "id": 1
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 5,
+        "Transform": {
+            "speed": 100.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [264.0, 216.0, 0.0],
+            "width": 48,
+            "height": 72
+        },
+        "Sprite": {
+            "id": 5
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 5,
+        "Transform": {
+            "speed": 100.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [312.0, 216.0, 0.0],
+            "width": 48,
+            "height": 72
+        },
+        "Sprite": {
+            "id": 5
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 5,
+        "Transform": {
+            "speed": 100.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [264.0, 168.0, 0.0],
+            "width": 48,
+            "height": 72
+        },
+        "Sprite": {
+            "id": 5
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 5,
+        "Transform": {
+            "speed": 100.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [312.0, 168.0, 0.0],
+            "width": 48,
+            "height": 72
+        },
+        "Sprite": {
+            "id": 5
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 5,
+        "Transform": {
+            "speed": 100.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [216.0, 216.0, 0.0],
+            "width": 48,
+            "height": 72
+        },
+        "Sprite": {
+            "id": 5
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 5,
+        "Transform": {
+            "speed": 100.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [216.0, 168.0, 0.0],
+            "width": 48,
+            "height": 72
+        },
+        "Sprite": {
+            "id": 5
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 5,
+        "Transform": {
+            "speed": 100.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [360.0, 216.0, 0.0],
+            "width": 48,
+            "height": 72
+        },
+        "Sprite": {
+            "id": 5
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 5,
+        "Transform": {
+            "speed": 100.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [360.0, 168.0, 0.0],
+            "width": 48,
+            "height": 72
+        },
+        "Sprite": {
+            "id": 5
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 5,
+        "Transform": {
+            "speed": 100.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [504.0, 72.0, 0.0],
+            "width": 48,
+            "height": 72
+        },
+        "Sprite": {
+            "id": 5
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 5,
+        "Transform": {
+            "speed": 100.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [324.0, 204.0, 0.0],
+            "width": 48,
+            "height": 72
+        },
+        "Sprite": {
+            "id": 5
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 5,
+        "Transform": {
+            "speed": 100.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [348.0, 156.0, 0.0],
+            "width": 48,
+            "height": 72
+        },
+        "Sprite": {
+            "id": 5
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 5,
+        "Transform": {
+            "speed": 100.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [324.0, 156.0, 0.0],
+            "width": 48,
+            "height": 72
+        },
+        "Sprite": {
+            "id": 5
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 5,
+        "Transform": {
+            "speed": 100.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [300.0, 204.0, 0.0],
+            "width": 48,
+            "height": 72
+        },
+        "Sprite": {
+            "id": 5
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 5,
+        "Transform": {
+            "speed": 100.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [252.0, 204.0, 0.0],
+            "width": 48,
+            "height": 72
+        },
+        "Sprite": {
+            "id": 5
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 5,
+        "Transform": {
+            "speed": 100.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [300.0, 156.0, 0.0],
+            "width": 48,
+            "height": 72
+        },
+        "Sprite": {
+            "id": 5
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 5,
+        "Transform": {
+            "speed": 100.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [276.0, 156.0, 0.0],
+            "width": 48,
+            "height": 72
+        },
+        "Sprite": {
+            "id": 5
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 5,
+        "Transform": {
+            "speed": 100.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [300.0, 108.0, 0.0],
+            "width": 48,
+            "height": 72
+        },
+        "Sprite": {
+            "id": 5
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 5,
+        "Transform": {
+            "speed": 100.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [324.0, 108.0, 0.0],
+            "width": 48,
+            "height": 72
+        },
+        "Sprite": {
+            "id": 5
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 5,
+        "Transform": {
+            "speed": 100.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [228.0, 132.0, 0.0],
+            "width": 48,
+            "height": 72
+        },
+        "Sprite": {
+            "id": 5
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 5,
+        "Transform": {
+            "speed": 100.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [252.0, 108.0, 0.0],
+            "width": 48,
+            "height": 72
+        },
+        "Sprite": {
+            "id": 5
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "none",
+        "type": "none",
+        "id": 5,
+        "Transform": {
+            "speed": 100.0,
+            "scale": [1.0, 1.0, 1.0],
+            "rotation": [0.0, 0.0, 0.0],
+            "position": [-84.0, -36.0, 0.0],
+            "width": 48,
+            "height": 72
+        },
+        "Sprite": {
+            "id": 5
+        },
+        "Object": {}
+    }
+}

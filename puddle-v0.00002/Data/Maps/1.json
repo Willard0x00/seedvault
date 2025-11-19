@@ -1,0 +1,78 @@
+{
+    "Entity": {
+        "name": "Matthew",
+        "type": "enemy",
+        "id": 3,
+        "Transform": {
+            "speed": 500.0,
+            "position": [72.0, 24.0, 0.0],
+            "scale": [1.0, 1.0],
+            "rotation": 0.0,
+            "width": 30,
+            "height": 30
+        },
+        "Sprite": {
+            "id": 3,
+            "idleFrameTransition.Duration": 600,
+            "idleFrameTransition.Offset": 0
+        },
+        "Enemy": {}
+    },
+    "Entity": {
+        "name": "TestObject",
+        "type": "object",
+        "id": 4,
+        "Transform": {
+            "speed": 100.0,
+            "position": [216.0, 72.0, 0.0],
+            "scale": [1.0, 1.0],
+            "rotation": 0.0,
+            "width": 32,
+            "height": 32
+        },
+        "Sprite": {
+            "id": 4,
+            "idleFrameTransition.Duration": 600,
+            "idleFrameTransition.Offset": 0
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "Tree",
+        "type": "object",
+        "id": 5,
+        "Transform": {
+            "speed": 100.0,
+            "position": [168.0, 120.0, 0.0],
+            "scale": [1.0, 1.0],
+            "rotation": 0.0,
+            "width": 48,
+            "height": 60
+        },
+        "Sprite": {
+            "id": 5,
+            "idleFrameTransition.Duration": 600,
+            "idleFrameTransition.Offset": 0
+        },
+        "Object": {}
+    },
+    "Entity": {
+        "name": "Firewood",
+        "type": "object",
+        "id": 1,
+        "Transform": {
+            "speed": 100.0,
+            "position": [168.0, 24.0, 0.0],
+            "scale": [1.0, 1.0],
+            "rotation": 0.0,
+            "width": 15,
+            "height": 15
+        },
+        "Sprite": {
+            "id": 1,
+            "idleFrameTransition.Duration": 600,
+            "idleFrameTransition.Offset": 0
+        },
+        "Object": {}
+    }
+}

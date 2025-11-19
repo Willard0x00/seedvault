@@ -1,0 +1,21 @@
+{"Entity": {
+    "name": "Matthew",
+    "type": "player",
+    "id": 0,
+    
+    "Transform": {
+        "speed": 500.0,
+        "scale": [1, 1],
+        "rotation": 0.0,
+        "width": 28,
+        "height": 32
+        },
+
+    "Sprite": {
+        "id": 0
+    },
+
+    "Player": {
+
+    }
+}}

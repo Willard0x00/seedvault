@@ -1,0 +1,9 @@
+{"Sprite": {
+    "name": "Fireball",
+    "id": 2,
+    "image": "Data/Sprites/Fireball/fireball.png",
+    "spriteWidth": 20,
+    "spriteHeight": 20,
+    "frames": 4
+    }
+}

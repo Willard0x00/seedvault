@@ -1,0 +1,9 @@
+{"Sprite": {
+    "name": "Tree",
+    "id": 5,
+    "image": "Data/Sprites/Tree/tree.png",
+    "spriteWidth": 48,
+    "spriteHeight": 60,
+    "frames": 1
+    }
+}

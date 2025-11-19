@@ -1,0 +1,20 @@
+{"Entity": {
+    "name": "Firewood",
+    "type": "object",
+    "id": 1,
+    
+    "Transform": {
+        "speed": 100.0,
+        "scale": [1, 1],
+        "rotation": 0.0,
+        "width": 15,
+        "height": 15
+    },
+
+    "Sprite": {
+        "id": 1
+    },
+
+    "Object": {
+    }
+}}
