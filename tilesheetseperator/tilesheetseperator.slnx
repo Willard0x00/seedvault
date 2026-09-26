@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="tilesheetseperator.vcxproj" />
+  <Project Path="tilesheetseperator.vcxproj" Id="ffe1ec89-2053-4cc1-b96d-bfd3a7ca6595" />
 </Solution>
