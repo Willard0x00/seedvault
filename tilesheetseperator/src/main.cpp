@@ -45,7 +45,7 @@ int main(int argc, const char* const* argv) {
 
 	std::vector<std::vector<int>> tiles;
 	int tilesX = 10;
-	int tilesY = (h - g_padding) / 48 & g_padding;
+	int tilesY = (h - g_padding) / (48 + g_padding);
 	tiles.resize(tilesX * tilesY);
 
 	for (auto& tile : tiles) {
