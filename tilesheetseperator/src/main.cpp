@@ -9,6 +9,8 @@
 #include <string>
 #include <iostream>
 
+static constexpr int g_padding = 6;
+
 int main(int argc, const char* const* argv) {
 	cxxopts::Options options("TileSheetSeperator", "seperates tile sheets into indiviual tiles and writes a png for each");
 	options.add_options()
@@ -43,7 +45,7 @@ int main(int argc, const char* const* argv) {
 
 	std::vector<std::vector<int>> tiles;
 	int tilesX = 10;
-	int tilesY = (h - 4) / 52;
+	int tilesY = (h - g_padding) / 52;
 	tiles.resize(tilesX * tilesY);
 
 	for (auto& tile : tiles) {
@@ -51,12 +53,12 @@ int main(int argc, const char* const* argv) {
 	}
 
 	auto skipXScanLine = [](int& pixel, int width) {
-		pixel += width * 4;
-		};
+		pixel += width * g_padding;
+	};
 
 	auto skipYScanLine = [](int& pixel) {
-		pixel += 4;
-		};
+		pixel += g_padding;
+	};
 
 	int size = w * h;
 	int pixel = 0;
